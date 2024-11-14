@@ -1,112 +1,202 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\zheka\\Desktop\\Projects\\presence\\",
+  "WorkspaceRootPath": "C:\\Users\\adm\\Desktop\\projects\\presence\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\zheka\\desktop\\projects\\presence\\data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\zheka\\desktop\\projects\\presence\\data\\remotedatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\remotedatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\remotedatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\zheka\\desktop\\projects\\presence\\data\\dao\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\dao\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\dao\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\zheka\\desktop\\projects\\presence\\data\\dao\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\dao\\subjectday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\dao\\subjectday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\dao\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\dao\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\zheka\\desktop\\projects\\presence\\data\\migrations\\remotedatabasecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\dao\\groupsubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\dao\\groupsubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\dao\\presence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\dao\\presence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\dao\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\dao\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\dao\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\dao\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\migrations\\20241113150019_migrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\migrations\\20241113150019_migrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\migrations\\remotedatabasecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\migrations\\remotedatabasecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 9,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Status.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\DAO\\Status.cs",
+              "RelativeDocumentMoniker": "data\\DAO\\Status.cs",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\DAO\\Status.cs",
+              "RelativeToolTip": "data\\DAO\\Status.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:24:59.933Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Presence.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\DAO\\Presence.cs",
+              "RelativeDocumentMoniker": "data\\DAO\\Presence.cs",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\DAO\\Presence.cs",
+              "RelativeToolTip": "data\\DAO\\Presence.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:23:36.796Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SubjectDay.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\DAO\\SubjectDay.cs",
+              "RelativeDocumentMoniker": "data\\DAO\\SubjectDay.cs",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\DAO\\SubjectDay.cs",
+              "RelativeToolTip": "data\\DAO\\SubjectDay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:19:28.366Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "RemoteDatabaseContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\presence\\data\\Migrations\\RemoteDatabaseContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "data\\Migrations\\RemoteDatabaseContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\presence\\data\\Migrations\\RemoteDatabaseContextModelSnapshot.cs",
-              "RelativeToolTip": "data\\Migrations\\RemoteDatabaseContextModelSnapshot.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "GroupSubject.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\DAO\\GroupSubject.cs",
+              "RelativeDocumentMoniker": "data\\DAO\\GroupSubject.cs",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\DAO\\GroupSubject.cs",
+              "RelativeToolTip": "data\\DAO\\GroupSubject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T15:04:53.835Z",
+              "WhenOpened": "2024-11-14T07:13:01.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Subject.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\DAO\\Subject.cs",
+              "RelativeDocumentMoniker": "data\\DAO\\Subject.cs",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\DAO\\Subject.cs",
+              "RelativeToolTip": "data\\DAO\\Subject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:09:11.205Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RemoteDatabaseContext.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\presence\\data\\RemoteDatabaseContext.cs",
-              "RelativeDocumentMoniker": "data\\RemoteDatabaseContext.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\presence\\data\\RemoteDatabaseContext.cs",
-              "RelativeToolTip": "data\\RemoteDatabaseContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\DAO\\User.cs",
+              "RelativeDocumentMoniker": "data\\DAO\\User.cs",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\DAO\\User.cs",
+              "RelativeToolTip": "data\\DAO\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T14:37:04.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "data.csproj",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\presence\\data\\data.csproj",
-              "RelativeDocumentMoniker": "data\\data.csproj",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\presence\\data\\data.csproj",
-              "RelativeToolTip": "data\\data.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-13T14:36:06.499Z",
+              "WhenOpened": "2024-11-14T06:59:25.283Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Group.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\presence\\data\\DAO\\Group.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\DAO\\Group.cs",
               "RelativeDocumentMoniker": "data\\DAO\\Group.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\presence\\data\\DAO\\Group.cs",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\DAO\\Group.cs",
               "RelativeToolTip": "data\\DAO\\Group.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T14:22:02.084Z",
+              "WhenOpened": "2024-11-14T06:58:13.207Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\presence\\data\\DAO\\User.cs",
-              "RelativeDocumentMoniker": "data\\DAO\\User.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\presence\\data\\DAO\\User.cs",
-              "RelativeToolTip": "data\\DAO\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAzAAAA",
+              "DocumentIndex": 8,
+              "Title": "20241113150019_Migrations.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Migrations\\20241113150019_Migrations.cs",
+              "RelativeDocumentMoniker": "data\\Migrations\\20241113150019_Migrations.cs",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Migrations\\20241113150019_Migrations.cs",
+              "RelativeToolTip": "data\\Migrations\\20241113150019_Migrations.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T14:21:50.003Z",
+              "WhenOpened": "2024-11-14T06:04:48.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RemoteDatabaseContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Migrations\\RemoteDatabaseContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "data\\Migrations\\RemoteDatabaseContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Migrations\\RemoteDatabaseContextModelSnapshot.cs",
+              "RelativeToolTip": "data\\Migrations\\RemoteDatabaseContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T15:04:53.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RemoteDatabaseContext.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\RemoteDatabaseContext.cs",
+              "RelativeDocumentMoniker": "data\\RemoteDatabaseContext.cs",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\RemoteDatabaseContext.cs",
+              "RelativeToolTip": "data\\RemoteDatabaseContext.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T14:37:04.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "data.csproj",
+              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\data.csproj",
+              "RelativeDocumentMoniker": "data\\data.csproj",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\data.csproj",
+              "RelativeToolTip": "data\\data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-13T14:36:06.499Z",
               "EditorCaption": ""
             }
           ]

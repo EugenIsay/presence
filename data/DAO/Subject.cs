@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace data.DAO
 {
-    public class GroupDAO
+    public class SubjectDAO
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public virtual IEnumerable<UserDAO> Users { get; set; }
-        public virtual IEnumerable<GroupSubjectDAO> GroupSubjects { get; set; }
+        public virtual IEnumerable<GroupSubjectDAO> GroupsSubject { get; set; }
+        public virtual IEnumerable<SubjectDayDAO> SubjectDays { get; set; }
     }
 }
