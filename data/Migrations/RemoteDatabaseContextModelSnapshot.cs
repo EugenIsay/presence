@@ -24,6 +24,61 @@ namespace data.Migrations
 
             modelBuilder.Entity("data.DAO.GroupDAO", b =>
                 {
+                    b.Property<int>("GroupId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("GroupId"));
+
+                    b.Property<string>("GroupName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("GroupId");
+
+                    b.ToTable("groups");
+                });
+
+            modelBuilder.Entity("data.DAO.GroupSubjectDAO", b =>
+                {
+                    b.Property<int>("GroupId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("SubjectId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Semester")
+                        .HasColumnType("integer");
+
+                    b.HasKey("GroupId", "SubjectId");
+
+                    b.HasIndex("SubjectId");
+
+                    b.ToTable("groupsSubjects");
+                });
+
+            modelBuilder.Entity("data.DAO.PresenceDAO", b =>
+                {
+                    b.Property<Guid>("UserGuid")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("SubjectDayId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("StatusId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("UserGuid", "SubjectDayId");
+
+                    b.HasIndex("StatusId");
+
+                    b.HasIndex("SubjectDayId");
+
+                    b.ToTable("presences");
+                });
+
+            modelBuilder.Entity("data.DAO.StatusDAO", b =>
+                {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
@@ -36,7 +91,48 @@ namespace data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("groups");
+                    b.ToTable("statuses");
+                });
+
+            modelBuilder.Entity("data.DAO.SubjectDAO", b =>
+                {
+                    b.Property<int>("SubjectId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("SubjectId"));
+
+                    b.Property<string>("SubjectName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("SubjectId");
+
+                    b.ToTable("subjects");
+                });
+
+            modelBuilder.Entity("data.DAO.SubjectDayDAO", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("Order")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("SubjectId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SubjectId");
+
+                    b.ToTable("subjectdays");
                 });
 
             modelBuilder.Entity("data.DAO.UserDAO", b =>
@@ -59,6 +155,63 @@ namespace data.Migrations
                     b.ToTable("users");
                 });
 
+            modelBuilder.Entity("data.DAO.GroupSubjectDAO", b =>
+                {
+                    b.HasOne("data.DAO.GroupDAO", "Group")
+                        .WithMany("GroupSubjects")
+                        .HasForeignKey("GroupId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("data.DAO.SubjectDAO", "Subject")
+                        .WithMany("GroupsSubject")
+                        .HasForeignKey("SubjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Group");
+
+                    b.Navigation("Subject");
+                });
+
+            modelBuilder.Entity("data.DAO.PresenceDAO", b =>
+                {
+                    b.HasOne("data.DAO.StatusDAO", "Status")
+                        .WithMany("Presences")
+                        .HasForeignKey("StatusId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("data.DAO.SubjectDayDAO", "SubjectDay")
+                        .WithMany()
+                        .HasForeignKey("SubjectDayId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("data.DAO.UserDAO", "User")
+                        .WithMany("Presences")
+                        .HasForeignKey("UserGuid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Status");
+
+                    b.Navigation("SubjectDay");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("data.DAO.SubjectDayDAO", b =>
+                {
+                    b.HasOne("data.DAO.SubjectDAO", "Subject")
+                        .WithMany("SubjectDays")
+                        .HasForeignKey("SubjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Subject");
+                });
+
             modelBuilder.Entity("data.DAO.UserDAO", b =>
                 {
                     b.HasOne("data.DAO.GroupDAO", "Group")
@@ -72,7 +225,26 @@ namespace data.Migrations
 
             modelBuilder.Entity("data.DAO.GroupDAO", b =>
                 {
+                    b.Navigation("GroupSubjects");
+
                     b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("data.DAO.StatusDAO", b =>
+                {
+                    b.Navigation("Presences");
+                });
+
+            modelBuilder.Entity("data.DAO.SubjectDAO", b =>
+                {
+                    b.Navigation("GroupsSubject");
+
+                    b.Navigation("SubjectDays");
+                });
+
+            modelBuilder.Entity("data.DAO.UserDAO", b =>
+                {
+                    b.Navigation("Presences");
                 });
 #pragma warning restore 612, 618
         }

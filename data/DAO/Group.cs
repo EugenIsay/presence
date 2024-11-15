@@ -8,8 +8,8 @@ namespace data.DAO
 {
     public class GroupDAO
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+        public int GroupId { get; set; }
+        public string GroupName { get; set; }
         public virtual IEnumerable<UserDAO> Users { get; set; }
         public virtual IEnumerable<GroupSubjectDAO> GroupSubjects { get; set; }
     }
