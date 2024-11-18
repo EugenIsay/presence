@@ -1,5 +1,6 @@
 ﻿using domain.Request;
 using domain.Service;
+using domain.UseCase;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +11,8 @@ namespace console_ui
 {
     class GroupUI
     {
-        private readonly GroupService _groupService;
-        public GroupUI(GroupService groupService)
+        private readonly IGroupUseCase _groupService;
+        public GroupUI(IGroupUseCase groupService)
         {
             _groupService = groupService;
         }
