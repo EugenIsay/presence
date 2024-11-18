@@ -1,4 +1,5 @@
-﻿using data.Repository;
+﻿using data.DAO;
+using data.Repository;
 using domain.Request;
 using domain.UseCase;
 using System;
@@ -20,6 +21,13 @@ namespace domain.Service
         public void AddGroup(AddGroupRequest addGroupRequest)
         {
             _groupRepository.addGroup(new data.DAO.GroupDAO { GroupName = addGroupRequest.Name });
+        }
+
+        public void AddGroupWithStudent(AddGroupWithStudentRequest addGroupWithStudent)
+        {
+            GroupDAO groupDAO = new GroupDAO { GroupName = addGroupWithStudent.addGroupRequest.Name };
+            List<UserDAO> users = addGroupWithStudent.addStudentRequests.Select(it => new UserDAO { Name = it.StudentName }).ToList();
+            _groupRepository.addGroupWithStudents(groupDAO, users);
         }
     }
 }

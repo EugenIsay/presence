@@ -16,5 +16,5 @@ SQLGroupRepository groupRepository = new SQLGroupRepository(remoteDatabaseContex
 GroupService groupService = new GroupService(groupRepository);
 GroupUI group = new GroupUI(groupService);
 
-group.AdddGroup();
+group.AddGroupWithStudent();
 printAllGroups(groupRepository);

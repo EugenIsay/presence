@@ -16,5 +16,7 @@ namespace data.Repository
         public bool removeGroup(GroupDAO group);
 
         public bool updateGroup(GroupDAO group);
+
+        public bool addGroupWithStudents(GroupDAO groupDAO, IEnumerable<UserDAO> userDAOs);
     }
 }

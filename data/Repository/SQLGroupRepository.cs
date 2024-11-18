@@ -43,6 +43,29 @@ namespace data.Repository
             }
         }
 
+        public bool addGroupWithStudents(GroupDAO groupDAO, IEnumerable<UserDAO> userDAOs)
+        {
+            using var transaction = _dbContext.Database.BeginTransaction();
+            try
+            {
+                _dbContext.groups.Add(groupDAO);
+                _dbContext.SaveChanges();
+                foreach (var user in userDAOs)
+                {
+                    user.Group = groupDAO;
+                    _dbContext.users.Add(user);
+                }
+                _dbContext.SaveChanges();
+                transaction.Commit();
+                return true;
+            }
+            catch
+            {
+                transaction.Rollback(); 
+                return false;
+            }
+        }
+
         public bool updateGroup(GroupDAO group)
         {
             return true;
