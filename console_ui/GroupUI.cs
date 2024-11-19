@@ -35,5 +35,22 @@ namespace console_ui
             _groupService.AddGroupWithStudent(addGroupWithStudent);
 
         }
+
+        public void RemoveGroup() 
+        {
+            Console.WriteLine("Введите id группы");
+            DeleteGroupRequest deleteGroupRequest = new DeleteGroupRequest { Id =  Int32.Parse(Console.ReadLine()) };
+            _groupService.DeleteGroup(deleteGroupRequest);
+        }
+
+        public void UpdateGroup ()
+        {
+            UpdateGroupRequest updateGroupRequest = new UpdateGroupRequest();
+            Console.WriteLine("Введите id группы которое хотите изменить");
+            int Id = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Введите на какое названик хотите поменять");
+            updateGroupRequest.Name = Console.ReadLine();
+            _groupService.UpdateGroup(Id, updateGroupRequest);
+        }
     }
 }

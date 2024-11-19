@@ -24,5 +24,5 @@ var serviceProvider  = servicesCollection.BuildServiceProvider();
 
 var groupUi = serviceProvider.GetService<GroupUI>();
 
-groupUi?.AddGroupWithStudent();
+groupUi?.RemoveGroup();
 

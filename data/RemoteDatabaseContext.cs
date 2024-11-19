@@ -24,14 +24,14 @@ public class RemoteDatabaseContext: DbContext
         modelBuilder.Entity<GroupDAO>().HasKey(it => it.GroupId); 
         modelBuilder.Entity<SubjectDAO>().HasKey(it => it.SubjectId);
         modelBuilder.Entity<SubjectDayDAO>().HasKey(it => it.Id);
-        modelBuilder.Entity<StatusDAO>().HasKey(it => it.Id);
+        modelBuilder.Entity<StatusDAO>().HasKey(it => it.Id); 
+        modelBuilder.Entity<PresenceDAO>().HasKey(it => new { it.UserGuid, it.SubjectDayId });
+        modelBuilder.Entity<GroupSubjectDAO>().HasKey(it => new { it.GroupId, it.SubjectId });
 
         modelBuilder.Entity<UserDAO>().Property(it => it.Guid).ValueGeneratedOnAdd();
         modelBuilder.Entity<GroupDAO>().Property(it => it.GroupId).ValueGeneratedOnAdd();
         modelBuilder.Entity<SubjectDAO>().Property(it => it.SubjectId).ValueGeneratedOnAdd();
         modelBuilder.Entity<SubjectDayDAO>().Property(it => it.Id).ValueGeneratedOnAdd();
         modelBuilder.Entity<StatusDAO>().Property(it => it.Id).ValueGeneratedOnAdd();
-        modelBuilder.Entity<PresenceDAO>().HasKey(it => new { it.UserGuid, it.SubjectDayId});
-        modelBuilder.Entity<GroupSubjectDAO>().HasKey(it => new { it.GroupId, it.SubjectId });
     }
 }

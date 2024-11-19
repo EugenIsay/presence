@@ -29,11 +29,13 @@ namespace data.Repository
             }
         }
 
-        public bool removeGroup(GroupDAO group)
+        public bool removeGroup(int id)
         {
             try
             {
-                _dbContext.groups.Remove(group);
+                GroupDAO? groupDAO = _dbContext.groups.FirstOrDefault(g => g.GroupId == id);
+                if (groupDAO == null) return false;
+                _dbContext.groups.Remove(groupDAO);
                 _dbContext.SaveChanges();
                 return true;
             }
@@ -42,6 +44,8 @@ namespace data.Repository
                 return false;
             }
         }
+
+
 
         public bool addGroupWithStudents(GroupDAO groupDAO, IEnumerable<UserDAO> userDAOs)
         {
@@ -66,9 +70,19 @@ namespace data.Repository
             }
         }
 
-        public bool updateGroup(GroupDAO group)
+        public bool updateGroup(int id, GroupDAO group)
         {
-            return true;
+            try
+            {
+                GroupDAO? groupDAO = _dbContext.groups.FirstOrDefault(g => g.GroupId == id);
+                groupDAO.GroupName = group.GroupName;
+                _dbContext.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public IEnumerable<GroupDAO> getAllGroups()
