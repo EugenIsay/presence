@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace domain.Request
 {
-    public class UpdateGroupRequest
+    public class RemoveUserRequest
     {
-        public string Name { get; set; }
+        public Guid guid {  get; set; }
     }
 }

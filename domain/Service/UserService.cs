@@ -22,5 +22,14 @@ namespace domain.Service
         {
             _userRepository.addUser(new UserDAO { Name = addUserRequest.Name });
         }
+        public void RemoveGroup(RemoveUserRequest removeUserRequest)
+        {
+            _userRepository.removeUser(removeUserRequest.guid);
+        }
+
+        public void UpdateGroup(Guid guid, UpdateUserRequest updateUserRequest)
+        {
+            _userRepository.updateUser(guid, new UserDAO { Name = updateUserRequest.UserName, Group = new GroupDAO { GroupId = updateUserRequest.GroupId } });
+        }
     }
 }

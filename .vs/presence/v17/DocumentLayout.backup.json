@@ -15,6 +15,10 @@
       "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\repository\\sqluserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\repository\\sqlgrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\repository\\sqlgrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +46,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "data\\Repository\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\IUserRepository.cs",
+              "RelativeToolTip": "data\\Repository\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T06:04:11.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "IGroupRepository.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\IGroupRepository.cs",
               "RelativeDocumentMoniker": "data\\Repository\\IGroupRepository.cs",
@@ -55,13 +72,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SQLGroupRepository.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\SQLGroupRepository.cs",
               "RelativeDocumentMoniker": "data\\Repository\\SQLGroupRepository.cs",
               "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\SQLGroupRepository.cs",
               "RelativeToolTip": "data\\Repository\\SQLGroupRepository.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAqwEEAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAIwF0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T13:03:48.94Z",
               "EditorCaption": ""
@@ -74,20 +91,20 @@
               "RelativeDocumentMoniker": "data\\Repository\\SQLUserRepository.cs",
               "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\SQLUserRepository.cs",
               "RelativeToolTip": "data\\Repository\\SQLUserRepository.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowDIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T13:03:48.197Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "RemoteDatabaseContext.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\RemoteDatabaseContext.cs",
               "RelativeDocumentMoniker": "data\\RemoteDatabaseContext.cs",
               "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\RemoteDatabaseContext.cs",
               "RelativeToolTip": "data\\RemoteDatabaseContext.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T12:58:47.849Z",
               "EditorCaption": ""
@@ -100,7 +117,7 @@
               "RelativeDocumentMoniker": "console_ui\\Program.cs",
               "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\console_ui\\Program.cs*",
               "RelativeToolTip": "console_ui\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T12:57:41.709Z",
               "EditorCaption": ""
@@ -113,7 +130,7 @@
               "RelativeDocumentMoniker": "console_ui\\GroupUI.cs",
               "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\console_ui\\GroupUI.cs",
               "RelativeToolTip": "console_ui\\GroupUI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T12:57:35.385Z",
               "EditorCaption": ""

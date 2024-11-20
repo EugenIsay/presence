@@ -33,14 +33,36 @@ namespace data.Repository
             return _dbContext.users.ToList();
         }
 
-        public bool removeUser(UserDAO user)
+        public bool removeUser(Guid guid)
         {
-            throw new NotImplementedException();
+            try
+            {
+                UserDAO user = _dbContext.users.FirstOrDefault(u => u.Guid == guid);
+                _dbContext.users.Remove(user);
+                _dbContext.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
-        public bool updateUser(UserDAO user)
+        public bool updateUser(Guid guid, UserDAO user)
         {
-            throw new NotImplementedException();
+            try
+            {
+                UserDAO mainUser = _dbContext.users.FirstOrDefault(u => u.Guid == guid);
+                mainUser.Name = user.Name;
+                GroupDAO group = _dbContext.groups.FirstOrDefault(g => g.GroupId == user.Group.GroupId);
+                mainUser.Group = group;
+                _dbContext.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

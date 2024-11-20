@@ -12,8 +12,8 @@ namespace data.Repository
         public IEnumerable<UserDAO>getAllUsers();
         public bool addUser(UserDAO user);
 
-        public bool removeUser(UserDAO user);
+        public bool removeUser(Guid guid);
 
-        public bool updateUser(UserDAO user);
+        public bool updateUser(Guid guid, UserDAO user);
     }
 }

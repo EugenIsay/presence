@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace domain.Request
+namespace console_ui
 {
-    public class UpdateGroupRequest
+    public class UserUI
     {
-        public string Name { get; set; }
     }
 }

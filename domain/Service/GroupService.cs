@@ -37,7 +37,7 @@ namespace domain.Service
 
         public void UpdateGroup(int Id, UpdateGroupRequest updateGroupRequest)
         {
-            _groupRepository.updateGroup(Id, new GroupDAO() { GroupId = updateGroupRequest.Id, GroupName = updateGroupRequest.Name });
+            _groupRepository.updateGroup(Id, new GroupDAO() { GroupName = updateGroupRequest.Name });
         }
     }
 }
