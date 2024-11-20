@@ -18,16 +18,16 @@ namespace domain.Service
         {
             _userRepository = userRepository;
         }
-        public void AddGroup(AddUserRequest addUserRequest)
+        public void AddUser(AddUserRequest addUserRequest)
         {
-            _userRepository.addUser(new UserDAO { Name = addUserRequest.Name });
+            _userRepository.addUser(new UserDAO { Name = addUserRequest.Name, Group = addUserRequest.Group });
         }
-        public void RemoveGroup(RemoveUserRequest removeUserRequest)
+        public void RemoveUser(RemoveUserRequest removeUserRequest)
         {
             _userRepository.removeUser(removeUserRequest.guid);
         }
 
-        public void UpdateGroup(Guid guid, UpdateUserRequest updateUserRequest)
+        public void UpdateUser(Guid guid, UpdateUserRequest updateUserRequest)
         {
             _userRepository.updateUser(guid, new UserDAO { Name = updateUserRequest.UserName, Group = new GroupDAO { GroupId = updateUserRequest.GroupId } });
         }

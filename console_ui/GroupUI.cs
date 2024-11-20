@@ -17,7 +17,7 @@ namespace console_ui
             _groupService = groupService;
         }
 
-        public void AdddGroup() 
+        public void AddGroup() 
         {
             Console.WriteLine("Введите название группы");
             _groupService.AddGroup(new AddGroupRequest { Name = Console.ReadLine() });

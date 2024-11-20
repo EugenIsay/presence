@@ -18,6 +18,7 @@ namespace data.Repository
         {
             try
             {
+                user.Group = _dbContext.groups.FirstOrDefault(g => g.GroupId == user.Group.GroupId);
                 _dbContext.users.Add(user);
                 _dbContext.SaveChanges();
                 return true;

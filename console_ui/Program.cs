@@ -15,14 +15,24 @@ void printAllGroups(IGroupRepository groupRepository)
 }
 
 IServiceCollection servicesCollection = new ServiceCollection();
+
+//servicesCollection.AddDbContext<RemoteDatabaseContext>()
+//    .AddSingleton<IGroupRepository, SQLGroupRepository>()
+//    .AddSingleton<IGroupUseCase, GroupService>()
+//    .AddSingleton<GroupUI>();
+
+
+
+
 servicesCollection.AddDbContext<RemoteDatabaseContext>()
-    .AddSingleton<IGroupRepository, SQLGroupRepository>()
-    .AddSingleton<IGroupUseCase, GroupService>()
-    .AddSingleton<GroupUI>();
+    .AddSingleton<IUserRepository, SQLUserRepository>()
+    .AddSingleton<IUserUseCase, UserService>()
+    .AddSingleton<UserUI>();
 
-var serviceProvider  = servicesCollection.BuildServiceProvider();
+var serviceProvider = servicesCollection.BuildServiceProvider();
 
-var groupUi = serviceProvider.GetService<GroupUI>();
+//var groupUi = serviceProvider.GetService<GroupUI>();
+var userUi = serviceProvider.GetService<UserUI>();
 
-groupUi?.RemoveGroup();
-
+//groupUi?.RemoveGroup();
+userUi?.RemoveUser();
