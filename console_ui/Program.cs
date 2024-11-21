@@ -22,8 +22,6 @@ IServiceCollection servicesCollection = new ServiceCollection();
 //    .AddSingleton<GroupUI>();
 
 
-
-
 servicesCollection.AddDbContext<RemoteDatabaseContext>()
     .AddSingleton<IUserRepository, SQLUserRepository>()
     .AddSingleton<IUserUseCase, UserService>()
