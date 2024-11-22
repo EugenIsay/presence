@@ -10,6 +10,7 @@ namespace domain.UseCase
 {
     public interface IGroupUseCase
     {
+        public IEnumerable<GroupEntity> GetGroupsWithStudents();
         public void AddGroup(AddGroupRequest addGroupRequest);
 
         public void AddGroupWithStudent(AddGroupWithStudentRequest addGroupWithStudent);

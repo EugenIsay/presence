@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ui", "ui\ui.csproj", "{864A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "console_ui", "console_ui\console_ui.csproj", "{0E887251-E6A7-4FCF-BEB9-A18069AB1EE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presence.Api", "Presence.Api\Presence.Api.csproj", "{BB716DD9-AF98-44BB-AEBC-D907704BECE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0E887251-E6A7-4FCF-BEB9-A18069AB1EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E887251-E6A7-4FCF-BEB9-A18069AB1EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E887251-E6A7-4FCF-BEB9-A18069AB1EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB716DD9-AF98-44BB-AEBC-D907704BECE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB716DD9-AF98-44BB-AEBC-D907704BECE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB716DD9-AF98-44BB-AEBC-D907704BECE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB716DD9-AF98-44BB-AEBC-D907704BECE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,108 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\adm\\Desktop\\projects\\presence\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\repository\\sqlgroupsubjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\repository\\sqlgroupsubjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB716DD9-AF98-44BB-AEBC-D907704BECE7}|Presence.Api\\Presence.Api.csproj|c:\\users\\adm\\desktop\\projects\\presence\\presence.api\\request\\grouprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB716DD9-AF98-44BB-AEBC-D907704BECE7}|Presence.Api\\Presence.Api.csproj|solutionrelative:presence.api\\request\\grouprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\repository\\sqlgrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\repository\\sqlgrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB716DD9-AF98-44BB-AEBC-D907704BECE7}|Presence.Api\\Presence.Api.csproj|c:\\users\\adm\\desktop\\projects\\presence\\presence.api\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB716DD9-AF98-44BB-AEBC-D907704BECE7}|Presence.Api\\Presence.Api.csproj|solutionrelative:presence.api\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\repository\\igroupsubjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\repository\\igroupsubjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB716DD9-AF98-44BB-AEBC-D907704BECE7}|Presence.Api\\Presence.Api.csproj|c:\\users\\adm\\desktop\\projects\\presence\\presence.api\\presence.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BB716DD9-AF98-44BB-AEBC-D907704BECE7}|Presence.Api\\Presence.Api.csproj|solutionrelative:presence.api\\presence.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\repository\\sqluserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\repository\\sqluserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|c:\\users\\adm\\desktop\\projects\\presence\\domain\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|solutionrelative:domain\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|c:\\users\\adm\\desktop\\projects\\presence\\domain\\usecase\\iuserusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|solutionrelative:domain\\usecase\\iuserusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E887251-E6A7-4FCF-BEB9-A18069AB1EE7}|console_ui\\console_ui.csproj|c:\\users\\adm\\desktop\\projects\\presence\\console_ui\\userui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E887251-E6A7-4FCF-BEB9-A18069AB1EE7}|console_ui\\console_ui.csproj|solutionrelative:console_ui\\userui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E887251-E6A7-4FCF-BEB9-A18069AB1EE7}|console_ui\\console_ui.csproj|c:\\users\\adm\\desktop\\projects\\presence\\console_ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E887251-E6A7-4FCF-BEB9-A18069AB1EE7}|console_ui\\console_ui.csproj|solutionrelative:console_ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E887251-E6A7-4FCF-BEB9-A18069AB1EE7}|console_ui\\console_ui.csproj|c:\\users\\adm\\desktop\\projects\\presence\\console_ui\\subjectui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E887251-E6A7-4FCF-BEB9-A18069AB1EE7}|console_ui\\console_ui.csproj|solutionrelative:console_ui\\subjectui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E887251-E6A7-4FCF-BEB9-A18069AB1EE7}|console_ui\\console_ui.csproj|c:\\users\\adm\\desktop\\projects\\presence\\console_ui\\groupui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E887251-E6A7-4FCF-BEB9-A18069AB1EE7}|console_ui\\console_ui.csproj|solutionrelative:console_ui\\groupui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|c:\\users\\adm\\desktop\\projects\\presence\\domain\\usecase\\igroupusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|solutionrelative:domain\\usecase\\igroupusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|c:\\users\\adm\\desktop\\projects\\presence\\domain\\service\\subjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|solutionrelative:domain\\service\\subjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|c:\\users\\adm\\desktop\\projects\\presence\\domain\\service\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|solutionrelative:domain\\service\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|c:\\users\\adm\\desktop\\projects\\presence\\domain\\usecase\\isubjectusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|solutionrelative:domain\\usecase\\isubjectusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|c:\\users\\adm\\desktop\\projects\\presence\\domain\\request\\updatesubjectrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|solutionrelative:domain\\request\\updatesubjectrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|c:\\users\\adm\\desktop\\projects\\presence\\domain\\request\\removesubjectrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|solutionrelative:domain\\request\\removesubjectrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|c:\\users\\adm\\desktop\\projects\\presence\\domain\\request\\addsubjectrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|solutionrelative:domain\\request\\addsubjectrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\repository\\sqlsubjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\repository\\sqlsubjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\remotedatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\remotedatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\repository\\isubjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\repository\\isubjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|c:\\users\\adm\\desktop\\projects\\presence\\domain\\request\\updategrouprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|solutionrelative:domain\\request\\updategrouprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|c:\\users\\adm\\desktop\\projects\\presence\\domain\\request\\adduserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|solutionrelative:domain\\request\\adduserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|c:\\users\\adm\\desktop\\projects\\presence\\domain\\request\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|solutionrelative:domain\\request\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\repository\\igrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\repository\\igrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|c:\\users\\adm\\desktop\\projects\\presence\\domain\\request\\removeuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDBE192A-81AF-4E0F-86B7-75EF3E1F7BF2}|domain\\domain.csproj|solutionrelative:domain\\request\\removeuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB716DD9-AF98-44BB-AEBC-D907704BECE7}|Presence.Api\\Presence.Api.csproj|c:\\users\\adm\\desktop\\projects\\presence\\presence.api\\response\\groupresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB716DD9-AF98-44BB-AEBC-D907704BECE7}|Presence.Api\\Presence.Api.csproj|solutionrelative:presence.api\\response\\groupresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -118,342 +30,62 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SQLGroupSubjectRepository.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\SQLGroupSubjectRepository.cs",
-              "RelativeDocumentMoniker": "data\\Repository\\SQLGroupSubjectRepository.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\SQLGroupSubjectRepository.cs",
-              "RelativeToolTip": "data\\Repository\\SQLGroupSubjectRepository.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAQwBoAAAA8AAAAAAAAAA==",
+              "Title": "GroupRequest.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\Presence.Api\\Request\\GroupRequest.cs",
+              "RelativeDocumentMoniker": "Presence.Api\\Request\\GroupRequest.cs",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\Presence.Api\\Request\\GroupRequest.cs",
+              "RelativeToolTip": "Presence.Api\\Request\\GroupRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T07:32:50.926Z",
+              "WhenOpened": "2024-11-22T13:18:53.093Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IGroupSubjectRepository.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\IGroupSubjectRepository.cs",
-              "RelativeDocumentMoniker": "data\\Repository\\IGroupSubjectRepository.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\IGroupSubjectRepository.cs",
-              "RelativeToolTip": "data\\Repository\\IGroupSubjectRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T07:19:50.372Z",
+              "Title": "Presence.Api",
+              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\Presence.Api\\Presence.Api.csproj",
+              "RelativeDocumentMoniker": "Presence.Api\\Presence.Api.csproj",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\Presence.Api\\Presence.Api.csproj",
+              "RelativeToolTip": "Presence.Api\\Presence.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-22T13:14:57.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SubjectUi.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\console_ui\\SubjectUi.cs",
-              "RelativeDocumentMoniker": "console_ui\\SubjectUi.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\console_ui\\SubjectUi.cs",
-              "RelativeToolTip": "console_ui\\SubjectUi.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABPAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "GroupController.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\Presence.Api\\Controllers\\GroupController.cs",
+              "RelativeDocumentMoniker": "Presence.Api\\Controllers\\GroupController.cs",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\Presence.Api\\Controllers\\GroupController.cs",
+              "RelativeToolTip": "Presence.Api\\Controllers\\GroupController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T06:29:09.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SubjectService.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Service\\SubjectService.cs",
-              "RelativeDocumentMoniker": "domain\\Service\\SubjectService.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Service\\SubjectService.cs",
-              "RelativeToolTip": "domain\\Service\\SubjectService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T06:06:48.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UpdateSubjectRequest.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Request\\UpdateSubjectRequest.cs",
-              "RelativeDocumentMoniker": "domain\\Request\\UpdateSubjectRequest.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Request\\UpdateSubjectRequest.cs",
-              "RelativeToolTip": "domain\\Request\\UpdateSubjectRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T06:05:18.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "RemoveSubjectRequest.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Request\\RemoveSubjectRequest.cs",
-              "RelativeDocumentMoniker": "domain\\Request\\RemoveSubjectRequest.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Request\\RemoveSubjectRequest.cs",
-              "RelativeToolTip": "domain\\Request\\RemoveSubjectRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T06:04:41.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ISubjectUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\UseCase\\ISubjectUseCase.cs",
-              "RelativeDocumentMoniker": "domain\\UseCase\\ISubjectUseCase.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\UseCase\\ISubjectUseCase.cs",
-              "RelativeToolTip": "domain\\UseCase\\ISubjectUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T06:03:43.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AddSubjectRequest.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Request\\AddSubjectRequest.cs",
-              "RelativeDocumentMoniker": "domain\\Request\\AddSubjectRequest.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Request\\AddSubjectRequest.cs",
-              "RelativeToolTip": "domain\\Request\\AddSubjectRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T13:22:55.249Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "SQLSubjectRepository.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\SQLSubjectRepository.cs",
-              "RelativeDocumentMoniker": "data\\Repository\\SQLSubjectRepository.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\SQLSubjectRepository.cs",
-              "RelativeToolTip": "data\\Repository\\SQLSubjectRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T13:06:50.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ISubjectRepository.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\ISubjectRepository.cs",
-              "RelativeDocumentMoniker": "data\\Repository\\ISubjectRepository.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\ISubjectRepository.cs",
-              "RelativeToolTip": "data\\Repository\\ISubjectRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T13:03:48.505Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AddUserRequest.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Request\\AddUserRequest.cs",
-              "RelativeDocumentMoniker": "domain\\Request\\AddUserRequest.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Request\\AddUserRequest.cs",
-              "RelativeToolTip": "domain\\Request\\AddUserRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T12:18:33.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserUI.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\console_ui\\UserUI.cs",
-              "RelativeDocumentMoniker": "console_ui\\UserUI.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\console_ui\\UserUI.cs",
-              "RelativeToolTip": "console_ui\\UserUI.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T06:38:44.538Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UpdateGroupRequest.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Request\\UpdateGroupRequest.cs",
-              "RelativeDocumentMoniker": "domain\\Request\\UpdateGroupRequest.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Request\\UpdateGroupRequest.cs",
-              "RelativeToolTip": "domain\\Request\\UpdateGroupRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T06:33:20.319Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GroupService.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Service\\GroupService.cs",
-              "RelativeDocumentMoniker": "domain\\Service\\GroupService.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Service\\GroupService.cs",
-              "RelativeToolTip": "domain\\Service\\GroupService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T06:30:36.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "UpdateUserRequest.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Request\\UpdateUserRequest.cs",
-              "RelativeDocumentMoniker": "domain\\Request\\UpdateUserRequest.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Request\\UpdateUserRequest.cs",
-              "RelativeToolTip": "domain\\Request\\UpdateUserRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T06:19:49.622Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IUserUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\UseCase\\IUserUseCase.cs",
-              "RelativeDocumentMoniker": "domain\\UseCase\\IUserUseCase.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\UseCase\\IUserUseCase.cs",
-              "RelativeToolTip": "domain\\UseCase\\IUserUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T06:18:53.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Service\\UserService.cs",
-              "RelativeDocumentMoniker": "domain\\Service\\UserService.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Service\\UserService.cs",
-              "RelativeToolTip": "domain\\Service\\UserService.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAUwBYAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T06:17:38.87Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "RemoveUserRequest.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Request\\RemoveUserRequest.cs",
-              "RelativeDocumentMoniker": "domain\\Request\\RemoveUserRequest.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Request\\RemoveUserRequest.cs",
-              "RelativeToolTip": "domain\\Request\\RemoveUserRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T06:16:00.29Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IGroupUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\UseCase\\IGroupUseCase.cs",
-              "RelativeDocumentMoniker": "domain\\UseCase\\IGroupUseCase.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\UseCase\\IGroupUseCase.cs",
-              "RelativeToolTip": "domain\\UseCase\\IGroupUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T06:15:26.358Z",
+              "WhenOpened": "2024-11-22T13:13:53.244Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "data\\Repository\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\IUserRepository.cs",
-              "RelativeToolTip": "data\\Repository\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
+              "Title": "GroupResponse.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\Presence.Api\\Response\\GroupResponse.cs",
+              "RelativeDocumentMoniker": "Presence.Api\\Response\\GroupResponse.cs",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\Presence.Api\\Response\\GroupResponse.cs",
+              "RelativeToolTip": "Presence.Api\\Response\\GroupResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T06:04:11.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "IGroupRepository.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\IGroupRepository.cs",
-              "RelativeDocumentMoniker": "data\\Repository\\IGroupRepository.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\IGroupRepository.cs",
-              "RelativeToolTip": "data\\Repository\\IGroupRepository.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAYwBEAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T13:13:30.75Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SQLGroupRepository.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\SQLGroupRepository.cs",
-              "RelativeDocumentMoniker": "data\\Repository\\SQLGroupRepository.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\SQLGroupRepository.cs",
-              "RelativeToolTip": "data\\Repository\\SQLGroupRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T13:03:48.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SQLUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\SQLUserRepository.cs",
-              "RelativeDocumentMoniker": "data\\Repository\\SQLUserRepository.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\SQLUserRepository.cs",
-              "RelativeToolTip": "data\\Repository\\SQLUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T13:03:48.197Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RemoteDatabaseContext.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\RemoteDatabaseContext.cs",
-              "RelativeDocumentMoniker": "data\\RemoteDatabaseContext.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\RemoteDatabaseContext.cs",
-              "RelativeToolTip": "data\\RemoteDatabaseContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T12:58:47.849Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\console_ui\\Program.cs",
-              "RelativeDocumentMoniker": "console_ui\\Program.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\console_ui\\Program.cs",
-              "RelativeToolTip": "console_ui\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T12:57:41.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GroupUI.cs",
-              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\console_ui\\GroupUI.cs",
-              "RelativeDocumentMoniker": "console_ui\\GroupUI.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\console_ui\\GroupUI.cs",
-              "RelativeToolTip": "console_ui\\GroupUI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T12:57:35.385Z",
+              "WhenOpened": "2024-11-22T13:13:51.323Z",
               "EditorCaption": ""
             }
           ]

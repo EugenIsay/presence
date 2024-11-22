@@ -23,8 +23,7 @@ namespace console_ui
             UserDAO user = new UserDAO();
             user.Name = Console.ReadLine();
             Console.WriteLine("Введите номер его группы");
-            user.Group = new GroupDAO { GroupId = Int32.Parse(Console.ReadLine()) };
-            _userService.AddUser(new AddUserRequest { Name = user.Name, Group = user.Group });
+            _userService.AddUser(new AddUserRequest { Name = user.Name, GroupId = Int32.Parse(Console.ReadLine()) });
         }
         public void RemoveUser()
         {

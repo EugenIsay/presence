@@ -10,7 +10,7 @@ namespace domain.Request
     public class AddUserRequest
     {
         public string Name { get; set; }
-        public GroupDAO Group { get; set; }
+        public int GroupId { get; set; }
 
     }
 }

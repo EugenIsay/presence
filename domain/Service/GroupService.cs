@@ -1,5 +1,6 @@
 ﻿using data.DAO;
 using data.Repository;
+using domain.Entity;
 using domain.Request;
 using domain.UseCase;
 using System;
@@ -33,6 +34,12 @@ namespace domain.Service
         public void DeleteGroup(DeleteGroupRequest deleteGroupRequest)
         {
             _groupRepository.removeGroup(deleteGroupRequest.Id);
+        }
+
+        public IEnumerable<GroupEntity> GetGroupsWithStudents()
+        {
+            return _groupRepository.getAllGroups().Select(group => new GroupEntity { Id = group.GroupId, Name = group.GroupName, 
+                users = group.Users.Select(user => new UserEntity { Guid = user.Guid, Name = user.Name }).ToList() }).ToList();
         }
 
         public void UpdateGroup(int Id, UpdateGroupRequest updateGroupRequest)

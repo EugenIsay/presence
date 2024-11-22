@@ -20,7 +20,7 @@ namespace domain.Service
         }
         public void AddUser(AddUserRequest addUserRequest)
         {
-            _userRepository.addUser(new UserDAO { Name = addUserRequest.Name, Group = addUserRequest.Group });
+            _userRepository.addUser(new UserDAO { Name = addUserRequest.Name, Group = new GroupDAO { GroupId = addUserRequest.GroupId }  });
         }
         public void RemoveUser(RemoveUserRequest removeUserRequest)
         {

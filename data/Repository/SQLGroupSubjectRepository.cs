@@ -23,7 +23,7 @@ namespace data.Repository
 
         public bool RemoveGroupSubject(GroupSubjectDAO groupSubject)
         {
-            GroupSubjectDAO groupSubject1 = _dbContext.groupsSubjects.FirstOrDefault(GS => GS.GroupId == groupSubject.GroupId && GS.SubjectId == groupSubject.SubjectId ));
+            GroupSubjectDAO groupSubject1 = _dbContext.groupsSubjects.FirstOrDefault(GS => GS.GroupId == groupSubject.GroupId && GS.SubjectId == groupSubject.SubjectId);
             _dbContext.groupsSubjects.Remove(groupSubject1);
             return _dbContext.SaveChanges() != 0;
         }

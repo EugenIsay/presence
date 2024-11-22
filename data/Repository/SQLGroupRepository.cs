@@ -1,4 +1,5 @@
 ﻿using data.DAO;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -87,7 +88,7 @@ namespace data.Repository
 
         public IEnumerable<GroupDAO> getAllGroups()
         {
-            return _dbContext.groups.ToList();
+            return _dbContext.groups.Include(group => group.Users).ToList();
         }
     }
 }

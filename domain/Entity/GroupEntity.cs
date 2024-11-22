@@ -10,5 +10,7 @@ namespace domain.Entity
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+        public IEnumerable<UserEntity>? users { get; set; } = null;
     }
 }
