@@ -1,8 +1,132 @@
 [
   {
     "ContainingType": "Presence.Api.Controllers.GroupController",
+    "Method": "RemoveGroup",
+    "RelativePath": "api/Group/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.GroupResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.GroupController",
+    "Method": "UpdateGroup",
+    "RelativePath": "api/Group/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "group",
+        "Type": "Presence.Api.Request.GroupRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.GroupResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.GroupController",
+    "Method": "AddGroup",
+    "RelativePath": "api/Group/{name}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "group",
+        "Type": "Presence.Api.Request.GroupRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "name",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.GroupResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.GroupController",
+    "Method": "AddGroupWithStudents",
+    "RelativePath": "api/Group/{name}/{users}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "group",
+        "Type": "Presence.Api.Request.GroupUsersRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "name",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "users",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.GroupResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.GroupController",
     "Method": "GetAllGroup",
-    "RelativePath": "groups",
+    "RelativePath": "api/Group/groups",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -20,16 +144,16 @@
     ]
   },
   {
-    "ContainingType": "Presence.Api.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "Presence.Api.Controllers.UserController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/User/users",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Presence.Api.WeatherForecast, Presence.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Presence.Api.Response.UserResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -37,7 +161,6 @@
         ],
         "StatusCode": 200
       }
-    ],
-    "EndpointName": "GetWeatherForecast"
+    ]
   }
 ]

@@ -1,7 +1,8 @@
 ﻿namespace Presence.Api.Request
 {
-    public class GroupRequest
+    public class GroupUsersRequest
     {
         public string Name { get; set; }
+        public List<UserRequest> Users { get; set; }
     }
 }
