@@ -90,5 +90,10 @@ namespace data.Repository
         {
             return _dbContext.groups.Include(group => group.Users).ToList();
         }
+
+        public GroupDAO getGroup(int Id)
+        {
+            return _dbContext.groups.FirstOrDefault(g => g.GroupId == Id);
+        }
     }
 }

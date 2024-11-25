@@ -11,6 +11,7 @@ namespace data.Repository
     public interface IGroupRepository
     {
         public IEnumerable<GroupDAO> getAllGroups();
+        public GroupDAO getGroup(int Id);
         public bool addGroup(GroupDAO group);
 
         public bool removeGroup(int id);

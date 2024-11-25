@@ -11,5 +11,7 @@ namespace data.Repository
     {
         public bool AddGroupSubject(GroupSubjectDAO groupSubject);
         public bool RemoveGroupSubject(GroupSubjectDAO groupSubject);
+
+
     }
 }

@@ -27,12 +27,18 @@ namespace data.Repository
 
         public bool removeSubjectDay(int Id)
         {
-            throw new NotImplementedException();
+            SubjectDayDAO subgectDay = _dbContext.subjectdays.FirstOrDefault(sb => sb.Id == Id);
+            _dbContext.subjectdays.Remove(subgectDay);
+            return _dbContext.SaveChanges() != 0;
         }
 
         public bool updateSubjectDay(int Id, SubjectDayDAO subjectDay)
         {
-            throw new NotImplementedException();
+            SubjectDayDAO subgectDay1 = _dbContext.subjectdays.FirstOrDefault(sb => sb.Id == Id);
+            subgectDay1.Date = subjectDay.Date;
+            subgectDay1.Order = subjectDay.Order;
+            subgectDay1.Subject = subjectDay.Subject;
+            return _dbContext.SaveChanges() != 0;
         }
     }
 }
