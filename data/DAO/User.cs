@@ -12,5 +12,6 @@ namespace data.DAO
         public string Name { get; set; }
         public virtual GroupDAO Group { get; set; }
         public virtual IEnumerable<PresenceDAO> Presences { get; set; }
+        public string GroupName => Group.GroupName;
     }
 }

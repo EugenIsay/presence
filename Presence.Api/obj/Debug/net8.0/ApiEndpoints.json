@@ -145,6 +145,63 @@
   },
   {
     "ContainingType": "Presence.Api.Controllers.UserController",
+    "Method": "RemoveUser",
+    "RelativePath": "api/User/{guid}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "guid",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.UserResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.UserController",
+    "Method": "AddUser",
+    "RelativePath": "api/User/{name}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Presence.Api.Request.UserRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "name",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.UserResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.UserController",
     "Method": "GetAllUsers",
     "RelativePath": "api/User/users",
     "HttpMethod": "GET",

@@ -1,4 +1,5 @@
-﻿using domain.Request;
+﻿using domain.Entity;
+using domain.Request;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,5 +14,10 @@ namespace domain.UseCase
         public void RemoveUser(RemoveUserRequest removeUserRequest);
 
         public void UpdateUser(Guid guid, UpdateUserRequest updateUserRequest);
+
+        public IEnumerable<UserEntity> GetAllUsers();
+
+        public UserEntity GetUser(Guid guid);
+
     }
 }

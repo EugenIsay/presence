@@ -88,12 +88,17 @@ namespace data.Repository
 
         public IEnumerable<GroupDAO> getAllGroups()
         {
-            return _dbContext.groups.Include(group => group.Users).ToList();
+            return _dbContext.groups
+                .Include(group => group.Users)
+                .Include(group => group.GroupSubjects).ToList();
         }
 
         public GroupDAO getGroup(int Id)
         {
-            return _dbContext.groups.FirstOrDefault(g => g.GroupId == Id);
+            return _dbContext.groups
+                .Include(group => group.Users)
+                .Include(group => group.GroupSubjects)
+                .FirstOrDefault(g => g.GroupId == Id);
         }
     }
 }

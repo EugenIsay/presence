@@ -1,4 +1,5 @@
-﻿using domain.Request;
+﻿using domain.Entity;
+using domain.Request;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,7 @@ namespace domain.UseCase
         public void RemoveSubject(RemoveSubjectRequest removeSubjectRequest);
 
         public void UpdateSubject(int Id, UpdateSubjectRequest updateSubjectRequest);
+
+        public IEnumerable<SubjectEntity> GetAllSubject();
     }
 }

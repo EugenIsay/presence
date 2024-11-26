@@ -6,7 +6,6 @@ using Presence.Api.Request;
 
 namespace Presence.Api.Controllers
 {
-    
     [ApiController]
     [Route("api/[controller]")]
     public class GroupController: ControllerBase
@@ -21,7 +20,7 @@ namespace Presence.Api.Controllers
         public ActionResult<GroupResponse> GetAllGroup()
         {
             var result = _groupService.GetGroupsWithStudents().Select(group => new GroupResponse
-            { Id = group.Id, Name = group.Name, Users = group.users.Select(user => new UserResponse
+            { Id = group.Id, Name = group.Name, Users = group.users?.Select(user => new UserResponse
             { Name = user.Name, Guid = user.Guid }).ToList() }).ToList();
             return Ok(result);
         }

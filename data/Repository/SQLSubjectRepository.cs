@@ -1,4 +1,5 @@
 ﻿using data.DAO;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,22 @@ namespace data.Repository
         {
             _dbContext.subjects.Add(subject);
             return _dbContext.SaveChanges() != 0;
+        }
+
+        public IEnumerable<SubjectDAO> GetAllSubject()
+        {
+            return _dbContext.subjects
+                .Include(subject => subject.SubjectDays)
+                .Include(subject => subject.GroupsSubject)
+                .ToList();
+        }
+
+        public SubjectDAO GetSubject(int Id)
+        {
+            return _dbContext.subjects
+                .Include(subject => subject.SubjectDays)
+                .Include(subject => subject.GroupsSubject)
+                .FirstOrDefault(s => s.SubjectId == Id);
         }
 
         public bool RemoveSubject(int Id)

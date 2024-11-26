@@ -12,5 +12,10 @@ namespace data.Repository
         public bool AddSubject(SubjectDAO subject);
         public bool RemoveSubject(int Id);
         public bool UpdateSubject(int Id ,SubjectDAO subject);
+
+        public IEnumerable<SubjectDAO> GetAllSubject();
+
+        public SubjectDAO GetSubject(int Id);
+
     }
 }

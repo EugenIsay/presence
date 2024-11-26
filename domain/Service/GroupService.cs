@@ -26,8 +26,11 @@ namespace domain.Service
 
         public void AddGroupWithStudent(AddGroupWithStudentRequest addGroupWithStudent)
         {
-            GroupDAO groupDAO = new GroupDAO { GroupName = addGroupWithStudent.addGroupRequest.Name };
-            List<UserDAO> users = addGroupWithStudent.addStudentRequests.Select(it => new UserDAO { Name = it.StudentName }).ToList();
+            GroupDAO groupDAO = new GroupDAO 
+            { GroupName = addGroupWithStudent.addGroupRequest.Name };
+            List<UserDAO> users = addGroupWithStudent.addStudentRequests
+                .Select(it => new UserDAO { Name = it.StudentName })
+                .ToList();
             _groupRepository.addGroupWithStudents(groupDAO, users);
         }
 
@@ -36,10 +39,30 @@ namespace domain.Service
             _groupRepository.removeGroup(deleteGroupRequest.Id);
         }
 
+        public GroupEntity GetGroup(int Id)
+        {
+            GroupDAO group = _groupRepository.getGroup(Id);
+            return new GroupEntity
+            {
+                Id = group.GroupId,
+                Name = group.GroupName,
+                users = group.Users
+                .Select(u => new UserEntity { Guid = u.Guid, Name = u.Name }),
+                groupSubjects = group.GroupSubjects
+                .Select(gs => new GroupSubjectEntity { Semester = gs.Semester, Subject = new SubjectEntity { Id = gs.Subject.SubjectId, Name = gs.Subject.SubjectName } })
+            }; 
+        }
+
         public IEnumerable<GroupEntity> GetGroupsWithStudents()
         {
-            return _groupRepository.getAllGroups().Select(group => new GroupEntity { Id = group.GroupId, Name = group.GroupName, 
-                users = group.Users.Select(user => new UserEntity { Guid = user.Guid, Name = user.Name }).ToList() }).ToList();
+            return _groupRepository
+                .getAllGroups()
+                .Select(group => new GroupEntity 
+                { Id = group.GroupId, Name = group.GroupName, users = group.Users
+                .Select(user => new UserEntity 
+                { Guid = user.Guid, Name = user.Name })
+                .ToList()})
+                .ToList();
         }
 
         public void UpdateGroup(int Id, UpdateGroupRequest updateGroupRequest)

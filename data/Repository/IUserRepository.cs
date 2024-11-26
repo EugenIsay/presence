@@ -10,6 +10,7 @@ namespace data.Repository
     public interface IUserRepository
     {
         public IEnumerable<UserDAO>getAllUsers();
+        public UserDAO getUser(Guid guid);
         public bool addUser(UserDAO user);
 
         public bool removeUser(Guid guid);

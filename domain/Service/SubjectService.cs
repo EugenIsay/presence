@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using data.DAO;
+using domain.Entity;
 
 namespace domain.Service
 {
@@ -23,6 +24,11 @@ namespace domain.Service
             _subjectRepository.AddSubject(new SubjectDAO { SubjectName = addSubjectRequest.SubjectName });
         }
 
+        IEnumerable<SubjectEntity> ISubjectUseCase.GetAllSubject()
+        {
+            throw new NotImplementedException();
+        }
+
         public void RemoveSubject(RemoveSubjectRequest removeSubjectRequest)
         {
             _subjectRepository.RemoveSubject(removeSubjectRequest.SubjectId);
@@ -32,5 +38,7 @@ namespace domain.Service
         {
             _subjectRepository.UpdateSubject(Id, new SubjectDAO { SubjectName = updateSubjectRequest.Name });
         }
+
+
     }
 }

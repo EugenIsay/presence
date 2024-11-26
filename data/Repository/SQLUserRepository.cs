@@ -1,4 +1,5 @@
 ﻿using data.DAO;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +32,15 @@ namespace data.Repository
 
         public IEnumerable<UserDAO> getAllUsers()
         {
-            return _dbContext.users.ToList();
+            return _dbContext.users
+                .Include(u => u.Presences)
+                .Include(u => u.Group)
+                .ToList();
+        }
+
+        public UserDAO getUser(Guid guid)
+        {
+            return _dbContext.users.Include(u => u.Presences).FirstOrDefault(u => u.Guid == guid);
         }
 
         public bool removeUser(Guid guid)

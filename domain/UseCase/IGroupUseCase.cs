@@ -19,5 +19,7 @@ namespace domain.UseCase
 
         public void UpdateGroup (int Id, UpdateGroupRequest updateGroupRequest);
 
+        public GroupEntity GetGroup(int Id);
+
     }
 }
