@@ -14,6 +14,7 @@ namespace Presence.Api.Extension
                 .AddScoped<IGroupRepository, SQLGroupRepository>()
                 .AddScoped<IGroupUseCase, GroupService>()
                 .AddScoped<GroupController>();
+
             services.AddDbContext<RemoteDatabaseContext>()
                 .AddScoped<IUserRepository, SQLUserRepository>()
                 .AddScoped<IUserUseCase, UserService>()

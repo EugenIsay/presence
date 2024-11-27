@@ -90,7 +90,8 @@ namespace data.Repository
         {
             return _dbContext.groups
                 .Include(group => group.Users)
-                .Include(group => group.GroupSubjects).ToList();
+                .Include(group => group.GroupSubjects)
+                .ToList();
         }
 
         public GroupDAO getGroup(int Id)

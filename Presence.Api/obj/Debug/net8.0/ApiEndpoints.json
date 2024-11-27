@@ -58,6 +58,32 @@
   },
   {
     "ContainingType": "Presence.Api.Controllers.GroupController",
+    "Method": "GetAllGroup",
+    "RelativePath": "api/Group/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.GroupResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.GroupController",
     "Method": "AddGroup",
     "RelativePath": "api/Group/{name}",
     "HttpMethod": "POST",

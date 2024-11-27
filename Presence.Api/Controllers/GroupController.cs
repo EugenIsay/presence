@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Presence.Api.Response;
 using domain.Request;
 using Presence.Api.Request;
+using domain.Entity;
 
 namespace Presence.Api.Controllers
 {
@@ -22,6 +23,15 @@ namespace Presence.Api.Controllers
             var result = _groupService.GetGroupsWithStudents().Select(group => new GroupResponse
             { Id = group.Id, Name = group.Name, Users = group.users?.Select(user => new UserResponse
             { Name = user.Name, Guid = user.Guid }).ToList() }).ToList();
+            return Ok(result);
+        }
+
+        [HttpGet(template: "{Id}")]
+        public ActionResult<GroupResponse> GetAllGroup(int Id)
+        {
+            GroupEntity group = _groupService.GetGroup(Id);
+            var result = new GroupResponse { Id = group.Id, Name = group.Name, Users = group.users
+                .Select(user => new UserResponse { Guid = user.Guid, Name = user.Name }) } ;
             return Ok(result);
         }
         [HttpPost(template: "{name}")]
