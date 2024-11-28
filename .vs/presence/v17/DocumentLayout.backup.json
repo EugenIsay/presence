@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\adm\\Desktop\\projects\\presence\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|c:\\users\\adm\\desktop\\projects\\presence\\data\\migrations\\remotedatabasecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83FF8B88-5206-4755-9E2E-CCDFDD41B211}|data\\data.csproj|solutionrelative:data\\migrations\\remotedatabasecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BB716DD9-AF98-44BB-AEBC-D907704BECE7}|Presence.Api\\Presence.Api.csproj|c:\\users\\adm\\desktop\\projects\\presence\\presence.api\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB716DD9-AF98-44BB-AEBC-D907704BECE7}|Presence.Api\\Presence.Api.csproj|solutionrelative:presence.api\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -102,7 +106,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 22,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,7 +118,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "RemoteDatabaseContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Migrations\\RemoteDatabaseContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "data\\Migrations\\RemoteDatabaseContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Migrations\\RemoteDatabaseContextModelSnapshot.cs",
+              "RelativeToolTip": "data\\Migrations\\RemoteDatabaseContextModelSnapshot.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAD4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T08:34:55.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SubjectUi.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\console_ui\\SubjectUi.cs",
               "RelativeDocumentMoniker": "console_ui\\SubjectUi.cs",
@@ -127,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "SQLPrecenseRepository.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\SQLPrecenseRepository.cs",
               "RelativeDocumentMoniker": "data\\Repository\\SQLPrecenseRepository.cs",
@@ -140,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "console_ui",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\console_ui\\console_ui.csproj",
               "RelativeDocumentMoniker": "console_ui\\console_ui.csproj",
@@ -153,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\console_ui\\Program.cs",
               "RelativeDocumentMoniker": "console_ui\\Program.cs",
@@ -166,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "UserUI.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\console_ui\\UserUI.cs",
               "RelativeDocumentMoniker": "console_ui\\UserUI.cs",
@@ -179,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ui",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\ui\\ui.csproj",
               "RelativeDocumentMoniker": "ui\\ui.csproj",
@@ -192,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Presence.Api",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\Presence.Api\\Presence.Api.csproj",
               "RelativeDocumentMoniker": "Presence.Api\\Presence.Api.csproj",
@@ -205,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "domain",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\domain.csproj",
               "RelativeDocumentMoniker": "domain\\domain.csproj",
@@ -218,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "data",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\data.csproj",
               "RelativeDocumentMoniker": "data\\data.csproj",
@@ -231,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "SQLGroupRepository.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\SQLGroupRepository.cs",
               "RelativeDocumentMoniker": "data\\Repository\\SQLGroupRepository.cs",
@@ -244,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "GroupService.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Service\\GroupService.cs",
               "RelativeDocumentMoniker": "domain\\Service\\GroupService.cs",
@@ -257,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "GroupRequest.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\Presence.Api\\Request\\GroupRequest.cs",
               "RelativeDocumentMoniker": "Presence.Api\\Request\\GroupRequest.cs",
@@ -270,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "IPresenceRepository.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\Repository\\IPresenceRepository.cs",
               "RelativeDocumentMoniker": "data\\Repository\\IPresenceRepository.cs",
@@ -283,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "GroupUsersRequest.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\Presence.Api\\Request\\GroupUsersRequest.cs",
               "RelativeDocumentMoniker": "Presence.Api\\Request\\GroupUsersRequest.cs",
@@ -296,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "UserRequest.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\Presence.Api\\Request\\UserRequest.cs",
               "RelativeDocumentMoniker": "Presence.Api\\Request\\UserRequest.cs",
@@ -309,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ServiceCollectionsExtension.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\Presence.Api\\Extension\\ServiceCollectionsExtension.cs",
               "RelativeDocumentMoniker": "Presence.Api\\Extension\\ServiceCollectionsExtension.cs",
@@ -322,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "IUserUseCase.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\UseCase\\IUserUseCase.cs",
               "RelativeDocumentMoniker": "domain\\UseCase\\IUserUseCase.cs",
@@ -335,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "GroupEntity.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Entity\\GroupEntity.cs",
               "RelativeDocumentMoniker": "domain\\Entity\\GroupEntity.cs",
@@ -348,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\data\\DAO\\User.cs",
               "RelativeDocumentMoniker": "data\\DAO\\User.cs",
@@ -361,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "UserEntity.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Entity\\UserEntity.cs",
               "RelativeDocumentMoniker": "domain\\Entity\\UserEntity.cs",
@@ -374,12 +391,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GroupController.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\Presence.Api\\Controllers\\GroupController.cs",
               "RelativeDocumentMoniker": "Presence.Api\\Controllers\\GroupController.cs",
-              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\Presence.Api\\Controllers\\GroupController.cs*",
-              "RelativeToolTip": "Presence.Api\\Controllers\\GroupController.cs*",
+              "ToolTip": "C:\\Users\\adm\\Desktop\\projects\\presence\\Presence.Api\\Controllers\\GroupController.cs",
+              "RelativeToolTip": "Presence.Api\\Controllers\\GroupController.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAIA0wCMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T06:55:04.817Z",
@@ -387,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\Presence.Api\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Presence.Api\\Controllers\\UserController.cs",
@@ -400,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\adm\\Desktop\\projects\\presence\\domain\\Service\\UserService.cs",
               "RelativeDocumentMoniker": "domain\\Service\\UserService.cs",

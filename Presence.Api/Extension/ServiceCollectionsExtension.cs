@@ -19,6 +19,11 @@ namespace Presence.Api.Extension
                 .AddScoped<IUserRepository, SQLUserRepository>()
                 .AddScoped<IUserUseCase, UserService>()
                 .AddScoped<UserController>();
+
+            services.AddDbContext<RemoteDatabaseContext>()
+                .AddScoped<ISubjectRepository, SQLSubjectRepository>()
+                .AddScoped<ISubjectUseCase, SubjectService>()
+                .AddScoped<SubjectController>();
         }
     }
 }
