@@ -13,6 +13,5 @@ namespace data.Repository
         public bool RemovePresence(int Id);
         public bool UpdatePresence(int Id, PresenceDAO presence);
         public IEnumerable<PresenceDAO> GetAllPresences();
-        public PresenceDAO GetPresence(int Id);
     }
 }

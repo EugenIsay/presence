@@ -26,14 +26,17 @@ namespace data.Repository
             return _dbContext.presences.Include(p => p.User).Include(p => p.SubjectDay).ToList();
         }
 
-        public PresenceDAO GetPresence(int Id)
+
+        public bool RemovePresenceByGroup(int Id)
         {
-            return new PresenceDAO();
+            _dbContext.presences.RemoveRange(_dbContext.presences.Where(p => p.User.Group.GroupId == Id).ToList());
+            return _dbContext.SaveChanges() != 0;
         }
 
-        public bool RemovePresence(int Id)
+        public bool RemoveAllPresence()
         {
-            throw new NotImplementedException();
+            _dbContext.presences.RemoveRange(_dbContext.presences.ToList());
+            return _dbContext.SaveChanges() != 0;
         }
 
         public bool UpdatePresence(int Id, PresenceDAO presence)
