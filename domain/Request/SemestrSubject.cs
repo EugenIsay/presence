@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace domain.Request
 {
-    public class AddGSRequest
+    public class SemestrSubject
     {
-        //public 
+        public int SubjectId { get; set; }
+        public int Semestr {  get; set; }
     }
 }

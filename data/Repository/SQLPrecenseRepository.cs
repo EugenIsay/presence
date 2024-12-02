@@ -28,7 +28,7 @@ namespace data.Repository
 
         public PresenceDAO GetPresence(int Id)
         {
-            PresenceDAO  presence = _dbContext.presences.FirstOrDefault(p => p.);
+            return new PresenceDAO();
         }
 
         public bool RemovePresence(int Id)

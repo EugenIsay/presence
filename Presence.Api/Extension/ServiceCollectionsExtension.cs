@@ -15,15 +15,19 @@ namespace Presence.Api.Extension
                 .AddScoped<IGroupUseCase, GroupService>()
                 .AddScoped<GroupController>();
 
-            services.AddDbContext<RemoteDatabaseContext>()
+            services
                 .AddScoped<IUserRepository, SQLUserRepository>()
                 .AddScoped<IUserUseCase, UserService>()
-                .AddScoped<UserController>();
+                .AddScoped<AdminController>();
 
-            services.AddDbContext<RemoteDatabaseContext>()
+            services
                 .AddScoped<ISubjectRepository, SQLSubjectRepository>()
                 .AddScoped<ISubjectUseCase, SubjectService>()
-                .AddScoped<SubjectController>();
+                .AddScoped<AdminController>();
+            services
+                .AddScoped<IGroupSubjectRepository, SQLGroupSubjectRepository>()
+                .AddScoped<IGSUseCase, GSService>()
+                .AddScoped<AdminController>();
         }
     }
 }

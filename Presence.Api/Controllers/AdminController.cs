@@ -8,12 +8,16 @@ namespace Presence.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class UserController : ControllerBase
+    public class AdminController : ControllerBase
     {
         private readonly IUserUseCase _userService;
-        public UserController(IUserUseCase userService)
+        private readonly ISubjectUseCase _subjectService;
+        private readonly IGSUseCase _gsService;
+        public AdminController(ISubjectUseCase subjectService, IUserUseCase userService, IGSUseCase gsService)
         {
+            _subjectService = subjectService;
             _userService = userService;
+            _gsService = gsService;
         }
 
         [HttpGet(template: "users")]
@@ -25,16 +29,25 @@ namespace Presence.Api.Controllers
             return Ok(result);
         }
 
-        [HttpPut(template: "{name}")]
+        [HttpPost(template: "User/{name}")]
         public ActionResult<UserResponse> AddUser(UserRequest user)
         {
             _userService.AddUser(new AddUserRequest { Name = user.Name });
             return Ok();
         }
-        [HttpDelete(template: "{guid}")]
+        [HttpDelete(template: "User/{guid}")]
         public ActionResult<UserResponse> RemoveUser(Guid guid)
         {
             _userService.RemoveUser(new RemoveUserRequest { guid = guid });
+            return Ok();
+        }
+
+
+        [HttpPost(template: "group/{group_id}/subjects")]
+        public ActionResult<SubjectResponse> AddSubject(int group_id, List<SubjectRequest> subjects)
+        {
+            _gsService.AddGroupSubject(new AddGroupSubjectsRequest { GroupId = group_id, subjects = subjects
+                .Select(subject => new SemestrSubject { SubjectId = subject.Id, Semestr = subject.Semestr }).ToList() });
             return Ok();
         }
     }
