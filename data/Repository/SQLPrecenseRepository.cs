@@ -23,7 +23,13 @@ namespace data.Repository
 
         public IEnumerable<PresenceDAO> GetAllPresences()
         {
-            return _dbContext.presences.Include(p => p.User).Include(p => p.SubjectDay).ToList();
+            return _dbContext.presences
+                .Include(p => p.User)
+                .ThenInclude(p => p.Group)
+                .Include(p => p.SubjectDay)
+                .ThenInclude(p => p.Subject)
+                .ThenInclude(p => p.GroupsSubject)
+                .ToList();
         }
 
 
@@ -41,7 +47,7 @@ namespace data.Repository
 
         public bool UpdatePresence(int Id, PresenceDAO presence)
         {
-            throw new NotImplementedException();
+            return true;
         }
     }
 }

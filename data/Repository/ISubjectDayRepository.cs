@@ -9,7 +9,7 @@ namespace data.Repository
 {
     public interface ISubjectDayRepository
     {
-        public IEnumerable<SubjectDayDAO> getSybjectDays();
+        public IEnumerable<SubjectDayDAO> getSubjectDays();
         public bool addSubjectDay(SubjectDayDAO subjectDay);
 
         public bool removeSubjectDay(int Id);

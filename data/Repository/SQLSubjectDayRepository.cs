@@ -16,11 +16,13 @@ namespace data.Repository
         }
         public bool addSubjectDay(SubjectDayDAO subjectDay)
         {
+            subjectDay.Subject = _dbContext.subjects
+                .FirstOrDefault(sb => sb.SubjectId == subjectDay.Subject.SubjectId);
             _dbContext.subjectdays.Add(subjectDay);
             return _dbContext.SaveChanges() != 0;
         }
 
-        public IEnumerable<SubjectDayDAO> getSybjectDays()
+        public IEnumerable<SubjectDayDAO> getSubjectDays()
         {
             return _dbContext.subjectdays.ToList();
         }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace domain.Request
 {
-    public class AddsubjectDayRequest
+    public class AddSubjectDayRequest
     {
         public DateTime Date { get; set; }
         public int Order { get; set; }

@@ -32,32 +32,6 @@
   },
   {
     "ContainingType": "Presence.Api.Controllers.AdminController",
-    "Method": "RemoveSubject",
-    "RelativePath": "api/Admin/subject/{Id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Presence.Api.Response.SubjectResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Presence.Api.Controllers.AdminController",
     "Method": "RemoveUser",
     "RelativePath": "api/Admin/User/{guid}",
     "HttpMethod": "DELETE",

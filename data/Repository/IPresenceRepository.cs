@@ -10,7 +10,8 @@ namespace data.Repository
     public interface IPresenceRepository
     {
         public bool AddPresence(PresenceDAO presence);
-        public bool RemovePresence(int Id);
+        public bool RemovePresenceByGroup(int Id);
+        public bool RemoveAllPresence();
         public bool UpdatePresence(int Id, PresenceDAO presence);
         public IEnumerable<PresenceDAO> GetAllPresences();
     }
