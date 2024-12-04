@@ -16,5 +16,7 @@ namespace data.Repository
         public bool removeUser(Guid guid);
 
         public bool updateUser(Guid guid, UserDAO user);
+
+        public bool changeUserGroup(Guid guid, int GroupId);
     }
 }

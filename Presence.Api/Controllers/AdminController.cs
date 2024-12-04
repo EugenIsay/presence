@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Presence.Api.Response;
 using domain.Request;
 using Presence.Api.Request;
+using System.Collections.Generic;
 
 namespace Presence.Api.Controllers
 {
@@ -29,19 +30,12 @@ namespace Presence.Api.Controllers
             return Ok(result);
         }
 
-        [HttpPost(template: "User/{name}")]
-        public ActionResult<UserResponse> AddUser(UserRequest user)
+        [HttpPost(template: "{group_id}/students")]
+        public ActionResult<UserResponse> AddUser(int group_id, List<string> user_guids)
         {
-            _userService.AddUser(new AddUserRequest { Name = user.Name });
+            _userService.ChangeUsersGroup(new ChangeUsersGroupRequest { GroupId = group_id, UsersGuids = user_guids.Select(guid => Guid.Parse(guid)).ToList() });
             return Ok();
         }
-        [HttpDelete(template: "User/{guid}")]
-        public ActionResult<UserResponse> RemoveUser(Guid guid)
-        {
-            _userService.RemoveUser(new RemoveUserRequest { guid = guid });
-            return Ok();
-        }
-
 
         [HttpPost(template: "group/{group_id}/subjects")]
         public ActionResult<SubjectResponse> AddSubject(int group_id, List<SubjectRequest> subjects)

@@ -19,5 +19,7 @@ namespace domain.UseCase
 
         public UserEntity GetUser(Guid guid);
 
+        public void ChangeUsersGroup(ChangeUsersGroupRequest users);
+
     }
 }

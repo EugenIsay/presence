@@ -30,6 +30,14 @@ namespace domain.Service
             });
         }
 
+        public void ChangeUsersGroup(ChangeUsersGroupRequest users)
+        {
+            foreach (var user in users.UsersGuids)
+            {
+                _userRepository.changeUserGroup(user, users.GroupId);
+            }
+        }
+
         public IEnumerable<UserEntity> GetAllUsers()
         {
             return _userRepository.getAllUsers()

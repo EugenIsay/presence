@@ -42,5 +42,11 @@ namespace Presence.Api.Controllers
                 });
             return Ok(result);
         }
+        [HttpPut(template:"{Id}")]
+        public ActionResult<SubjectDayResponse> UpdateSchedule(int Id, SubjectDayRequest subjectDay)
+        {
+            _subjectDay.updateSubjectDay(Id, new UpdateSubjectDayRequest { Date = subjectDay.Date, Order = subjectDay.Order, SubjectId = subjectDay.SubjectId });
+            return Ok();
+        }
     }
 }

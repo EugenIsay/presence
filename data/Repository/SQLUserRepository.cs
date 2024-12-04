@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace data.Repository
@@ -28,6 +29,13 @@ namespace data.Repository
             {
                 return false;
             }
+        }
+
+        public bool changeUserGroup(Guid guid, int GroupId)
+        {
+            UserDAO user = _dbContext.users.FirstOrDefault(user => user.Guid == guid);
+            user.Group = _dbContext.groups.FirstOrDefault(group => group.GroupId == GroupId);
+            return _dbContext.SaveChanges() != 0;
         }
 
         public IEnumerable<UserDAO> getAllUsers()

@@ -72,5 +72,24 @@ namespace Presence.Api.Controllers
             });
             return Ok();
         }
+        [HttpDelete(template:"allPresence")]
+        public ActionResult<PresenceResponse> RemoveAllPresence() 
+        {
+            _presenceService.RemoveAllPresence();
+            return Ok();
+        }
+        [HttpDelete(template: "{group_id}")]
+        public ActionResult<PresenceResponse> RemovePresenceByGroupId(int group_id)
+        {
+            _presenceService.RemovePresenceByGroup(group_id);
+            return Ok();
+        }
+        [HttpPut(template: "presence/{status_id}")]
+        public ActionResult<PresenceResponse> UpdatePresenceStatus(int status_id, UpdateStatusRequest presence)
+        {
+            _presenceService.UpdatePresence(status_id, new UpdatePresenceRequest { SubjectDayId = presence.SubjectDay, UserGuid = Guid.Parse(presence.UserGuid) });
+            return Ok();
+        }
+
     }
 }

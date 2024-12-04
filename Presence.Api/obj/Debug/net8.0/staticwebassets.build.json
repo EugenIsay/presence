@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "tyX0KkSicEGnYvuRJLK2PGdOellO1EfoOdFKsQHKcFs=",
+  "Hash": "vMDnPMVH33AYEq2kP9QpMPgVZW5sBfj/bPr4WiWQ+vw=",
   "Source": "Presence.Api",
   "BasePath": "_content/Presence.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }
