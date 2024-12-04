@@ -27,17 +27,25 @@ namespace domain.Service
 
         public IEnumerable<SubjectDayEntity> getSubjectDays()
         {
-            throw new NotImplementedException();
+            return _subjectDayRepository.getSubjectDays().Select(day => 
+            new SubjectDayEntity { 
+                Date = day.Date, 
+                Id = day.Id, 
+                Order = day.Order, 
+                Subject = new SubjectEntity { Name = day.Subject.SubjectName, Id = day.Subject.SubjectId, 
+                    GroupsSubject = day.Subject.GroupsSubject.Select(gs => new GroupSubjectEntity { 
+                        Group = new GroupEntity { Id = gs.Group.GroupId, Name = gs.Group.GroupName  }, Semester = gs.Semester }).ToList() }  
+            }).ToList();
         }
 
         public void removeSubjectDay(int Id)
         {
-            throw new NotImplementedException();
+            _subjectDayRepository.removeSubjectDay(Id);
         }
 
         public void updateSubjectDay(int Id, UpdateSubjectDayRequest subjectDay)
         {
-            throw new NotImplementedException();
+            _subjectDayRepository.updateSubjectDay(Id, new SubjectDayDAO { Date = subjectDay.Date, Order = subjectDay.Order, Subject = new SubjectDAO { SubjectId = subjectDay.SubjectId } });
         }
     }
 }

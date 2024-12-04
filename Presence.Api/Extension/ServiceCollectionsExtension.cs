@@ -28,6 +28,11 @@ namespace Presence.Api.Extension
                 .AddScoped<IGroupSubjectRepository, SQLGroupSubjectRepository>()
                 .AddScoped<IGSUseCase, GSService>()
                 .AddScoped<AdminController>();
+
+            services
+                .AddScoped<ISubjectDayRepository, SQLSubjectDayRepository>()
+                .AddScoped<ISDUseCase, SDService>()
+                .AddScoped<ScheduleController>();
         }
     }
 }

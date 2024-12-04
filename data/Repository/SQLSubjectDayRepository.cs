@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace data.Repository
 {
-    internal class SQLSubjectDayRepository : ISubjectDayRepository
+    public class SQLSubjectDayRepository : ISubjectDayRepository
     {
         private readonly RemoteDatabaseContext _dbContext;
         public SQLSubjectDayRepository(RemoteDatabaseContext remoteDatabaseContext)
