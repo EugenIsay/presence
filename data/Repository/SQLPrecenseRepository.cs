@@ -17,6 +17,9 @@ namespace data.Repository
         }
         public bool AddPresence(PresenceDAO presence)
         {
+            presence.Status = _dbContext.statuses.FirstOrDefault(status => status.Id == presence.StatusId);
+            presence.SubjectDay = _dbContext.subjectdays.FirstOrDefault(subjectDay => subjectDay.Id == presence.SubjectDayId);
+            presence.User = _dbContext.users.FirstOrDefault(user => user.Guid == presence.UserGuid);
             _dbContext.presences.Add(presence);
             return _dbContext.SaveChanges() != 0;
         }
@@ -26,9 +29,11 @@ namespace data.Repository
             return _dbContext.presences
                 .Include(p => p.User)
                 .ThenInclude(p => p.Group)
+                .ThenInclude(p => p.GroupSubjects)
                 .Include(p => p.SubjectDay)
                 .ThenInclude(p => p.Subject)
-                .ThenInclude(p => p.GroupsSubject)
+                .ThenInclude(p => p.GroupsSubject).ThenInclude(p => p.Group)
+                .Include(p => p.Status)
                 .ToList();
         }
 
@@ -47,7 +52,13 @@ namespace data.Repository
 
         public bool UpdatePresence(int Id, PresenceDAO presence)
         {
-            return true;
+            UserDAO user = _dbContext.users.FirstOrDefault(user => user.Guid == presence.UserGuid);
+            SubjectDayDAO subjectDay = _dbContext.subjectdays.FirstOrDefault(sb => sb.Id == presence.SubjectDayId);
+            PresenceDAO presence1 = _dbContext.presences.FirstOrDefault(p => p.User == user && p.SubjectDay == subjectDay);
+            
+            presence1.Status = _dbContext.statuses.FirstOrDefault(status => status.Id == Id);
+
+            return _dbContext.SaveChanges() != 0;
         }
     }
 }

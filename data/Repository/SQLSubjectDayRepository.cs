@@ -1,8 +1,10 @@
 ﻿using data.DAO;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace data.Repository
@@ -24,7 +26,7 @@ namespace data.Repository
 
         public IEnumerable<SubjectDayDAO> getSubjectDays()
         {
-            return _dbContext.subjectdays.ToList();
+            return _dbContext.subjectdays.Include(subject => subject.Subject).ThenInclude(group => group.GroupsSubject).ThenInclude(group => group.Group).ToList();
         }
 
         public bool removeSubjectDay(int Id)

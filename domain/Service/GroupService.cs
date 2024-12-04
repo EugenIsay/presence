@@ -27,10 +27,15 @@ namespace domain.Service
         public void AddGroupWithStudent(AddGroupWithStudentRequest addGroupWithStudent)
         {
             GroupDAO groupDAO = new GroupDAO 
-            { GroupName = addGroupWithStudent.addGroupRequest.Name };
+            { 
+                GroupName = addGroupWithStudent.addGroupRequest.Name 
+            };
+            
             List<UserDAO> users = addGroupWithStudent.addStudentRequests
-                .Select(it => new UserDAO { Name = it.StudentName })
-                .ToList();
+                .Select(it => 
+                new UserDAO { 
+                    Name = it.StudentName 
+                }).ToList();
             _groupRepository.addGroupWithStudents(groupDAO, users);
         }
 

@@ -489,6 +489,152 @@
           }
         }
       }
+    },
+    "/api/Presence/getPrecense": {
+      "get": {
+        "tags": [
+          "Presence"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PresenceResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PresenceResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PresenceResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Schedule/subjectDay": {
+      "post": {
+        "tags": [
+          "Schedule"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubjectDayRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubjectDayRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubjectDayRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubjectDayResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubjectDayResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubjectDayResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Schedule/{Id}": {
+      "delete": {
+        "tags": [
+          "Schedule"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubjectDayResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubjectDayResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubjectDayResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Schedule/getSchedule": {
+      "get": {
+        "tags": [
+          "Schedule"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubjectDayResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubjectDayResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubjectDayResponse"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -524,6 +670,22 @@
         },
         "additionalProperties": false
       },
+      "GroupSubjectResponse": {
+        "type": "object",
+        "properties": {
+          "group": {
+            "$ref": "#/components/schemas/GroupResponse"
+          },
+          "subject": {
+            "$ref": "#/components/schemas/SubjectResponse"
+          },
+          "semestr": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "GroupUsersRequest": {
         "type": "object",
         "properties": {
@@ -535,6 +697,81 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/UserRequest"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PresenceResponse": {
+        "type": "object",
+        "properties": {
+          "user": {
+            "$ref": "#/components/schemas/UserResponse"
+          },
+          "subjectDay": {
+            "$ref": "#/components/schemas/SubjectDayResponse"
+          },
+          "status": {
+            "$ref": "#/components/schemas/StatusResponse"
+          }
+        },
+        "additionalProperties": false
+      },
+      "StatusResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SubjectDayRequest": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "order": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "subjectId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SubjectDayResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "order": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "subject": {
+            "$ref": "#/components/schemas/SubjectResponse"
+          },
+          "presences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PresenceResponse"
             },
             "nullable": true
           }
@@ -565,6 +802,20 @@
           "subjectName": {
             "type": "string",
             "nullable": true
+          },
+          "subjectDays": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SubjectDayResponse"
+            },
+            "nullable": true
+          },
+          "groupSubjects": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GroupSubjectResponse"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -592,6 +843,13 @@
           },
           "group": {
             "$ref": "#/components/schemas/GroupResponse"
+          },
+          "presences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PresenceResponse"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false

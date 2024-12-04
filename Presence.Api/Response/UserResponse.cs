@@ -8,5 +8,7 @@ namespace Presence.Api.Response
         public string Name { get; set; }
         public GroupResponse Group { get; set; }
 
+        public IEnumerable<PresenceResponse> presences { get; set; }
+
     }
 }

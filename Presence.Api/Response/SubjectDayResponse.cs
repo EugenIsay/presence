@@ -8,5 +8,6 @@ namespace Presence.Api.Response
         public DateTime Date { get; set; }
         public int Order { get; set; }
         public virtual SubjectResponse Subject { get; set; }
+        public IEnumerable<PresenceResponse> presences { get; set; }
     }
 }

@@ -5,5 +5,7 @@ namespace Presence.Api.Response
     {
         public int Id { get; set; }
         public string SubjectName { get; set; }
+        public IEnumerable<SubjectDayResponse> subjectDays { get; set; }
+        public IEnumerable<GroupSubjectResponse> groupSubjects { get; set; }
     }
 }

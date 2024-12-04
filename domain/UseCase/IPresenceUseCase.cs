@@ -1,4 +1,6 @@
 ﻿using data.DAO;
+using domain.Entity;
+using domain.Request;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +11,10 @@ namespace domain.UseCase
 {
     public interface IPresenceUseCase
     {
-        public void AddPresence(PresenceDAO presence);
+        public void AddPresence(AddPresenceRequest presence);
         public void RemovePresenceByGroup(int Id);
         public void RemoveAllPresence();
-        public void UpdatePresence(int Id, PresenceDAO presence);
-        public IEnumerable<PresenceDAO> GetAllPresences();
+        public void UpdatePresence(int Id, UpdatePresenceRequest presence);
+        public IEnumerable<PresenceEntity> GetAllPresences();
     }
 }

@@ -276,5 +276,97 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.PresenceController",
+    "Method": "GetPrecense",
+    "RelativePath": "api/Presence/getPrecense",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.PresenceResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.ScheduleController",
+    "Method": "RemoveSubjectDay",
+    "RelativePath": "api/Schedule/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.SubjectDayResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.ScheduleController",
+    "Method": "getSchedule",
+    "RelativePath": "api/Schedule/getSchedule",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.SubjectDayResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.ScheduleController",
+    "Method": "AddSubjectDay",
+    "RelativePath": "api/Schedule/subjectDay",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subjectDay",
+        "Type": "Presence.Api.Request.SubjectDayRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.SubjectDayResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

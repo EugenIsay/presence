@@ -1,4 +1,5 @@
-﻿using System;
+﻿using data.DAO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,6 @@ namespace domain.Entity
     {
         public virtual UserEntity User { get; set; }
         public virtual SubjectDayEntity SubjectDay { get; set; }
-        public int Status { get; set; }
+        public StatusEntity Status { get; set; }
     }
 }
