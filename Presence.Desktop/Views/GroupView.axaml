@@ -1,0 +1,54 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:vm="using:Presence.Desktop.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Presence.Desktop.Views.GroupView"
+			 x:DataType="vm:GroupViewModel">
+	
+	<Design.DataContext>
+		<vm:GroupViewModel/>
+	</Design.DataContext>
+
+	<DockPanel>
+		<Grid DockPanel.Dock="Top" ColumnDefinitions="*,*,*">
+			<ComboBox SelectedValue="{Binding SelectedGroupItem}" ItemsSource="{Binding Groups}"  Grid.Column="0">
+				<ComboBox.ItemTemplate>
+					<DataTemplate>
+						<TextBlock Text="{Binding Name}"/>
+					</DataTemplate>
+				</ComboBox.ItemTemplate>
+			</ComboBox>
+			<Button Grid.Column="1" Command="{Binding DellInGroup}" Content="Удаление всех студентов"/>
+			<Button Grid.Column="2" Command="{Binding RemoveCommand}" Content="Импорт студентов в группу"/>
+		</Grid>
+		<StackPanel DockPanel.Dock="Bottom">
+			<ComboBox SelectedIndex="{Binding Sort}" >
+				<ComboBoxItem>Без сортировки</ComboBoxItem>
+				<ComboBoxItem>По убыв</ComboBoxItem>
+				<ComboBoxItem>По возраст</ComboBoxItem>
+			</ComboBox>
+		</StackPanel>
+		<Border Margin="10" CornerRadius="10" DockPanel.Dock="Top">
+			<ListBox Selection="{Binding Selection}"  SelectionMode="Multiple"  ItemsSource="{Binding Users}">
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<StackPanel Orientation="Horizontal">
+							<TextBlock Text="{Binding Name}" />
+						</StackPanel>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+				<ListBox.ContextMenu>
+					<ContextMenu >
+						<MenuItem Command="{Binding RemoveSelectedCommand}" IsVisible="{Binding !MultipleSelected}" Header="Remove"/>
+						<MenuItem IsVisible="{Binding !MultipleSelected}" Header="Edit"/>
+						<MenuItem IsVisible="{Binding MultipleSelected}" Header="RemoveAll"/>
+					</ContextMenu>
+				</ListBox.ContextMenu>
+			</ListBox>
+		</Border>
+
+	</DockPanel>
+
+</UserControl>

@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 namespace Presence.Api.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/schedule")]
     public class ScheduleController : ControllerBase
     {
         private readonly ISDUseCase _subjectDay;
@@ -17,7 +17,7 @@ namespace Presence.Api.Controllers
             _subjectDay = subjectDay;
         }
 
-        [HttpPost(template:"subjectDay")]
+        [HttpPost]
         public ActionResult<SubjectDayResponse> AddSubjectDay(SubjectDayRequest subjectDay)
         {
             _subjectDay.addSubjectDay(new AddSubjectDayRequest { Date = subjectDay.Date, Order = subjectDay.Order, SubjectId = subjectDay.SubjectId });
@@ -29,7 +29,7 @@ namespace Presence.Api.Controllers
             _subjectDay.removeSubjectDay(Id);
             return Ok();
         }
-        [HttpGet(template: "getSchedule")]
+        [HttpGet]
         public ActionResult<SubjectDayResponse> getSchedule()
         {
             var result = _subjectDay.getSubjectDays()

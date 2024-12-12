@@ -8,7 +8,7 @@ using domain.Entity;
 namespace Presence.Api.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/group")]
     public class GroupController: ControllerBase
     {
         private readonly IGroupUseCase _groupService;
@@ -17,7 +17,7 @@ namespace Presence.Api.Controllers
             _groupService = groupService;
         }
 
-        [HttpGet(template: "groups")]
+        [HttpGet]
         public ActionResult<GroupResponse> GetAllGroup()
         {
             var result = _groupService.GetGroupsWithStudents().Select(group => new GroupResponse
@@ -34,7 +34,7 @@ namespace Presence.Api.Controllers
                 .Select(user => new UserResponse { Guid = user.Guid, Name = user.Name }) } ;
             return Ok(result);
         }
-        [HttpPost(template: "{name}")]
+        [HttpPost]
         public ActionResult<GroupResponse> AddGroup(GroupRequest group)
         {
             try
@@ -47,7 +47,7 @@ namespace Presence.Api.Controllers
             }
             return Ok();
         }
-        [HttpPost(template: "{name}/{users}")]
+        [HttpPost(template: "group_with_users")]
         public ActionResult<GroupResponse> AddGroupWithStudents(GroupUsersRequest group)
         {
             try

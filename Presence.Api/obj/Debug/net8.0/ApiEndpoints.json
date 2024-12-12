@@ -1,8 +1,59 @@
 [
   {
     "ContainingType": "Presence.Api.Controllers.AdminController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/admin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.UserResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.AdminController",
+    "Method": "AddUser",
+    "RelativePath": "api/admin/{group_id}/students",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "group_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "user_guids",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.UserResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.AdminController",
     "Method": "AddSubject",
-    "RelativePath": "api/Admin/group/{group_id}/subjects",
+    "RelativePath": "api/admin/{group_id}/subjects",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -31,73 +82,42 @@
     ]
   },
   {
-    "ContainingType": "Presence.Api.Controllers.AdminController",
-    "Method": "RemoveUser",
-    "RelativePath": "api/Admin/User/{guid}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "guid",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Presence.Api.Response.UserResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Presence.Api.Controllers.AdminController",
-    "Method": "AddUser",
-    "RelativePath": "api/Admin/User/{name}",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user",
-        "Type": "Presence.Api.Request.UserRequest",
-        "IsRequired": true
-      },
-      {
-        "Name": "name",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Presence.Api.Response.UserResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Presence.Api.Controllers.AdminController",
-    "Method": "GetAllUsers",
-    "RelativePath": "api/Admin/users",
+    "ContainingType": "Presence.Api.Controllers.GroupController",
+    "Method": "GetAllGroup",
+    "RelativePath": "api/group",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "Presence.Api.Response.UserResponse",
+        "Type": "Presence.Api.Response.GroupResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.GroupController",
+    "Method": "AddGroup",
+    "RelativePath": "api/group",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "group",
+        "Type": "Presence.Api.Request.GroupRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.GroupResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -110,7 +130,7 @@
   {
     "ContainingType": "Presence.Api.Controllers.GroupController",
     "Method": "RemoveGroup",
-    "RelativePath": "api/Group/{id}",
+    "RelativePath": "api/group/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -136,7 +156,7 @@
   {
     "ContainingType": "Presence.Api.Controllers.GroupController",
     "Method": "UpdateGroup",
-    "RelativePath": "api/Group/{id}",
+    "RelativePath": "api/group/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -167,7 +187,7 @@
   {
     "ContainingType": "Presence.Api.Controllers.GroupController",
     "Method": "GetAllGroup",
-    "RelativePath": "api/Group/{Id}",
+    "RelativePath": "api/group/{Id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -192,39 +212,8 @@
   },
   {
     "ContainingType": "Presence.Api.Controllers.GroupController",
-    "Method": "AddGroup",
-    "RelativePath": "api/Group/{name}",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "group",
-        "Type": "Presence.Api.Request.GroupRequest",
-        "IsRequired": true
-      },
-      {
-        "Name": "name",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Presence.Api.Response.GroupResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Presence.Api.Controllers.GroupController",
     "Method": "AddGroupWithStudents",
-    "RelativePath": "api/Group/{name}/{users}",
+    "RelativePath": "api/group/group_with_users",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -233,38 +222,8 @@
         "Name": "group",
         "Type": "Presence.Api.Request.GroupUsersRequest",
         "IsRequired": true
-      },
-      {
-        "Name": "name",
-        "Type": "",
-        "IsRequired": true
-      },
-      {
-        "Name": "users",
-        "Type": "",
-        "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "Presence.Api.Response.GroupResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Presence.Api.Controllers.GroupController",
-    "Method": "GetAllGroup",
-    "RelativePath": "api/Group/groups",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": [
       {
         "Type": "Presence.Api.Response.GroupResponse",
@@ -280,7 +239,7 @@
   {
     "ContainingType": "Presence.Api.Controllers.PresenceController",
     "Method": "GetPrecense",
-    "RelativePath": "api/Presence/getPrecense",
+    "RelativePath": "api/presence",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -298,9 +257,158 @@
     ]
   },
   {
+    "ContainingType": "Presence.Api.Controllers.PresenceController",
+    "Method": "AddPresence",
+    "RelativePath": "api/presence",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "presence",
+        "Type": "Presence.Api.Request.PresenceRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.PresenceResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.PresenceController",
+    "Method": "RemoveAllPresence",
+    "RelativePath": "api/presence",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.PresenceResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.PresenceController",
+    "Method": "RemovePresenceByGroupId",
+    "RelativePath": "api/presence/{group_id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "group_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.PresenceResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.PresenceController",
+    "Method": "UpdatePresenceStatus",
+    "RelativePath": "api/presence/{status_id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "status_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "presence",
+        "Type": "Presence.Api.UpdateStatusRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.PresenceResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.ScheduleController",
+    "Method": "AddSubjectDay",
+    "RelativePath": "api/schedule",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subjectDay",
+        "Type": "Presence.Api.Request.SubjectDayRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.SubjectDayResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presence.Api.Controllers.ScheduleController",
+    "Method": "getSchedule",
+    "RelativePath": "api/schedule",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Presence.Api.Response.SubjectDayResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Presence.Api.Controllers.ScheduleController",
     "Method": "RemoveSubjectDay",
-    "RelativePath": "api/Schedule/{Id}",
+    "RelativePath": "api/schedule/{Id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -325,32 +433,17 @@
   },
   {
     "ContainingType": "Presence.Api.Controllers.ScheduleController",
-    "Method": "getSchedule",
-    "RelativePath": "api/Schedule/getSchedule",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "Presence.Api.Response.SubjectDayResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Presence.Api.Controllers.ScheduleController",
-    "Method": "AddSubjectDay",
-    "RelativePath": "api/Schedule/subjectDay",
-    "HttpMethod": "POST",
+    "Method": "UpdateSchedule",
+    "RelativePath": "api/schedule/{Id}",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
       {
         "Name": "subjectDay",
         "Type": "Presence.Api.Request.SubjectDayRequest",

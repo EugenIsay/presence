@@ -8,7 +8,7 @@ using domain.Request;
 namespace Presence.Api.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/presence")]
     public class PresenceController: ControllerBase
     {
         private readonly IPresenceUseCase _presenceService;
@@ -17,7 +17,7 @@ namespace Presence.Api.Controllers
             _presenceService = presenceService;
         }
 
-        [HttpGet(template: "getPrecense")]
+        [HttpGet]
         public ActionResult<PresenceResponse> GetPrecense()
         {
             var result = _presenceService.GetAllPresences().Select(presence => new PresenceResponse
@@ -62,7 +62,7 @@ namespace Presence.Api.Controllers
             return Ok(result);
         }
 
-        [HttpPost(template: "presence")]
+        [HttpPost]
         public ActionResult<PresenceResponse> AddPresence(PresenceRequest presence)
         {
             _presenceService.AddPresence(new AddPresenceRequest {
@@ -72,7 +72,7 @@ namespace Presence.Api.Controllers
             });
             return Ok();
         }
-        [HttpDelete(template:"allPresence")]
+        [HttpDelete]
         public ActionResult<PresenceResponse> RemoveAllPresence() 
         {
             _presenceService.RemoveAllPresence();
@@ -84,7 +84,7 @@ namespace Presence.Api.Controllers
             _presenceService.RemovePresenceByGroup(group_id);
             return Ok();
         }
-        [HttpPut(template: "presence/{status_id}")]
+        [HttpPut(template: "{status_id}")]
         public ActionResult<PresenceResponse> UpdatePresenceStatus(int status_id, UpdateStatusRequest presence)
         {
             _presenceService.UpdatePresence(status_id, new UpdatePresenceRequest { SubjectDayId = presence.SubjectDay, UserGuid = Guid.Parse(presence.UserGuid) });

@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Admin/users": {
+    "/api/admin": {
       "get": {
         "tags": [
           "Admin"
@@ -34,18 +34,19 @@
         }
       }
     },
-    "/api/Admin/User/{name}": {
+    "/api/admin/{group_id}/students": {
       "post": {
         "tags": [
           "Admin"
         ],
         "parameters": [
           {
-            "name": "name",
+            "name": "group_id",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -53,17 +54,26 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserRequest"
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserRequest"
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UserRequest"
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               }
             }
           }
@@ -92,47 +102,7 @@
         }
       }
     },
-    "/api/Admin/User/{guid}": {
-      "delete": {
-        "tags": [
-          "Admin"
-        ],
-        "parameters": [
-          {
-            "name": "guid",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/UserResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/UserResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/UserResponse"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Admin/group/{group_id}/subjects": {
+    "/api/admin/{group_id}/subjects": {
       "post": {
         "tags": [
           "Admin"
@@ -200,7 +170,7 @@
         }
       }
     },
-    "/api/Group/groups": {
+    "/api/group": {
       "get": {
         "tags": [
           "Group"
@@ -227,9 +197,55 @@
             }
           }
         }
+      },
+      "post": {
+        "tags": [
+          "Group"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GroupRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GroupRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GroupRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GroupResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GroupResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GroupResponse"
+                }
+              }
+            }
+          }
+        }
       }
     },
-    "/api/Group/{Id}": {
+    "/api/group/{Id}": {
       "get": {
         "tags": [
           "Group"
@@ -269,86 +285,10 @@
         }
       }
     },
-    "/api/Group/{name}": {
+    "/api/group/group_with_users": {
       "post": {
         "tags": [
           "Group"
-        ],
-        "parameters": [
-          {
-            "name": "name",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/GroupRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/GroupRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/GroupRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/GroupResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/GroupResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/GroupResponse"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Group/{name}/{users}": {
-      "post": {
-        "tags": [
-          "Group"
-        ],
-        "parameters": [
-          {
-            "name": "name",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "users",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "requestBody": {
           "content": {
@@ -393,7 +333,7 @@
         }
       }
     },
-    "/api/Group/{id}": {
+    "/api/group/{id}": {
       "delete": {
         "tags": [
           "Group"
@@ -490,8 +430,81 @@
         }
       }
     },
-    "/api/Presence/getPrecense": {
+    "/api/presence": {
       "get": {
+        "tags": [
+          "Presence"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PresenceResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PresenceResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PresenceResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Presence"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PresenceRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PresenceRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PresenceRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PresenceResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PresenceResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PresenceResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
         "tags": [
           "Presence"
         ],
@@ -519,7 +532,106 @@
         }
       }
     },
-    "/api/Schedule/subjectDay": {
+    "/api/presence/{group_id}": {
+      "delete": {
+        "tags": [
+          "Presence"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PresenceResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PresenceResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PresenceResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/presence/{status_id}": {
+      "put": {
+        "tags": [
+          "Presence"
+        ],
+        "parameters": [
+          {
+            "name": "status_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStatusRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStatusRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStatusRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PresenceResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PresenceResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PresenceResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/schedule": {
       "post": {
         "tags": [
           "Schedule"
@@ -565,9 +677,36 @@
             }
           }
         }
+      },
+      "get": {
+        "tags": [
+          "Schedule"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubjectDayResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubjectDayResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubjectDayResponse"
+                }
+              }
+            }
+          }
+        }
       }
     },
-    "/api/Schedule/{Id}": {
+    "/api/schedule/{Id}": {
       "delete": {
         "tags": [
           "Schedule"
@@ -605,13 +744,41 @@
             }
           }
         }
-      }
-    },
-    "/api/Schedule/getSchedule": {
-      "get": {
+      },
+      "put": {
         "tags": [
           "Schedule"
         ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubjectDayRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubjectDayRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubjectDayRequest"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK",
@@ -699,6 +866,24 @@
               "$ref": "#/components/schemas/UserRequest"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PresenceRequest": {
+        "type": "object",
+        "properties": {
+          "subjectDayId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userGuid": {
+            "type": "string",
+            "format": "uuid"
           }
         },
         "additionalProperties": false
@@ -816,6 +1001,20 @@
               "$ref": "#/components/schemas/GroupSubjectResponse"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateStatusRequest": {
+        "type": "object",
+        "properties": {
+          "userGuid": {
+            "type": "string",
+            "nullable": true
+          },
+          "subjectDay": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

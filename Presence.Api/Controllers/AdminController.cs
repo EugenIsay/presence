@@ -8,7 +8,7 @@ using System.Collections.Generic;
 namespace Presence.Api.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/admin")]
     public class AdminController : ControllerBase
     {
         private readonly IUserUseCase _userService;
@@ -21,7 +21,7 @@ namespace Presence.Api.Controllers
             _gsService = gsService;
         }
 
-        [HttpGet(template: "users")]
+        [HttpGet]
         public ActionResult<UserResponse> GetAllUsers()
         {
             var result = _userService.GetAllUsers()
@@ -37,7 +37,7 @@ namespace Presence.Api.Controllers
             return Ok();
         }
 
-        [HttpPost(template: "group/{group_id}/subjects")]
+        [HttpPost(template: "{group_id}/subjects")]
         public ActionResult<SubjectResponse> AddSubject(int group_id, List<SubjectRequest> subjects)
         {
             _gsService.AddGroupSubject(new AddGroupSubjectsRequest { GroupId = group_id, subjects = subjects

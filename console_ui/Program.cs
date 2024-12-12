@@ -33,4 +33,4 @@ var serviceProvider = servicesCollection.BuildServiceProvider();
 var userUi = serviceProvider.GetService<UserUI>();
 
 //groupUi?.RemoveGroup();
-userUi?.RemoveUser();
+userUi?.AddUser();
